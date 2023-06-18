@@ -1,0 +1,93 @@
+@import '../../../../sass/variables.scss';
+
+
+.add-work-modal-wrapper {
+    width: 100% !important;
+    max-width: 800px !important;
+
+    .ant-modal-content {
+        padding: 16px 24px !important;        
+        background-color: var(--without-gradient-bg-2);
+        .ant-modal-header {
+            background: none;
+        }
+        .ant-modal-close-x {
+            color: var(--title-color);
+        }
+    }
+
+    .ant-modal-header {
+        .ant-modal-title {
+            font-size: $fs-24;
+            line-height: 36px;
+            font-weight: $fw-600;
+            color: var(--title-color);
+        }
+    }
+
+    .ant-select-selector,
+    .ant-picker {
+        border-radius: 2px !important;
+    }
+
+    .apply-work {
+        padding-top: 5px;
+    }
+
+    .apply-work-field-wrap {
+        label {
+            display: block;
+        }
+
+        .ant-picker {
+            width: 100%;
+        }
+    }
+
+    .add-work-schedule {
+        padding-top: 60px;
+
+        .apply-work-field-wrap {
+            p {
+                padding-top: 8px;
+            }
+        }
+
+        .apply-work-field-wrap:nth-child(3) p,
+        .apply-work-field-wrap:nth-child(6) p {
+            color: $secondary-color;
+        }
+    }
+
+    .ant-form-item {
+        margin-bottom: 0;
+    }
+
+  
+    .ant-modal-footer {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    @media screen and (max-width: 750px) {
+        .ant-modal-content {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 530px) {
+        .ant-modal-content {
+            width: 100%;
+            max-width: 400px !important;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 430px) {
+        .ant-modal-content {
+            width: 100%;
+            max-width: 350px !important;
+            margin: 0 auto;
+        }
+    }
+}

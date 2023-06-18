@@ -1,0 +1,1371 @@
+@import "../../sass/variables";
+
+.dashboard {
+  .ant-card .ant-card-body {
+    padding: 16px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .ant-progress.ant-progress-show-info .ant-progress-outer {
+    /* margin-inline-end: calc(-2em - 8px); */
+    padding-inline-end: calc(0em + 0px);
+  }
+
+  .resendButton {
+    margin-right: 12px;
+  }
+
+  .tracking-time-card {
+    .tracking-time-buttons {
+      .resend-button {
+        margin-left: -70px
+      }
+    }
+  }
+
+  .ant-btn-default.ant-btn-dangerous {
+    height: 36px !important;
+  }
+
+  .ant-progress {
+    .ant-progress-text {
+      display: none !important;
+    }
+  }
+
+  .showmore {
+    color: $border-color;
+    margin-left: 13px;
+  }
+
+  .IdleTimeGraph {
+    .ant-progress .ant-progress-text {
+      position: absolute;
+      z-index: 276;
+      color: $white-color;
+      top: 30px;
+      left: 38% !important;
+    }
+  }
+
+  .attendance-summary-card {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .ant-card-body {
+      padding-top: 16px;
+      padding-bottom: 0px;
+    }
+
+    .border-sumamry {
+      border-right: 1px solid $line-color;
+    }
+
+    .center {
+      text-align: -webkit-center;
+
+    }
+
+    .attendance-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      img {
+        margin-top: 11px;
+      }
+
+      &.green {
+        background-color: $progress-color;
+      }
+
+      &.red {
+        background-color: $error-color;
+      }
+
+      &.yellow {
+        background-color: $lightOrange-color;
+      }
+    }
+
+    .present-div {
+      // color: $grey-color;
+      margin-top: 6px;
+    }
+
+    .custom-div {
+      // color: $grey-color;
+      margin: 0 auto;
+    }
+  }
+
+  // .productive-hours-card{
+  //   color: $title-color;
+  // }
+  .distraction-alert {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .attendance-summary {
+      .attendance-summary-text {
+        margin-top: 0;
+      }
+
+      // .show-more {
+      //   color: $border-color;
+      // }
+    }
+
+    // .distraction-title {
+    //   color: $title-color;
+    // }
+  }
+
+  .employee-month-details {
+    .ant-card-body {
+      padding-bottom: 12px !important;
+      padding-top: 16px !important;
+    }
+
+    .employees-month-header {
+      // .show-more {
+      //   color: $border-color;
+      // }
+    }
+
+    .employee-card:hover {
+      .cup-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      transform: translateY(-5px);
+      z-index: 2;
+      border-radius: 14px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 9px rgba(42, 157, 143, 0.65);
+    }
+
+    .employee-card {
+      margin-top: 35px;
+      padding: 10px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.22);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease-out;
+
+      .mvp-label {
+        margin-top: 0px;
+        margin-left: 4px;
+      }
+
+    }
+  }
+
+  .idle-time-card {
+    .ant-card-body {
+      padding-top: 16px;
+      padding-bottom: 0px;
+    }
+
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    color: $title-color;
+
+    h6 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .timetracked {
+      font-size: 38px;
+      color: $secondary-color;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .most-used-services-card-employee {
+    min-height: 428px !important;
+
+    .ant-card-body {
+      padding-bottom: 16 !important;
+    }
+  }
+
+  .most-used-services-card {
+    .ant-card-body {
+      padding-bottom: 16 !important;
+    }
+
+    .attendance-summary {
+
+      // .attendance-summary-text {
+      //   color: $title-color;
+      // }
+      .show-more-link {
+        color: $border-color;
+      }
+    }
+
+    .most-used-services-card {
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+  }
+
+  .organization {
+    .AttendanceSummary {
+      color: $title-color;
+
+      p {
+        margin-top: 0;
+      }
+
+      .lowest {
+        color: $border-color;
+        margin-right: 5px;
+        border-right: 1px solid $border-color;
+        padding-right: 5px;
+      }
+    }
+
+    .filterScore {
+      .lowest {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .overallscoreManual {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .attendance-summary {
+      // color: $title-color;
+
+      .title {
+        margin-top: 0px;
+      }
+
+      .filter-score {
+        .showmore {
+          margin-right: 8px;
+          padding-right: 8px;
+        }
+
+        .lowest {
+          color: $border-color;
+        }
+      }
+
+    }
+  }
+
+  .overallscore {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .ant-card-body {
+      padding-top: 16px !important;
+    }
+
+    .ant-select-selector {
+      background: rgba(244, 162, 97, 0.2) !important;
+      // background: var(--custom-select-bg) !important;
+      border: none;
+
+      border-radius: 6px;
+    }
+
+    .ant-select-arrow {
+      .anticon {
+        color: var(--title-color);
+      }
+    }
+
+    .attendance-summary {
+      color: $title-color;
+
+      .title {
+        margin-top: 0px;
+      }
+
+      .filter-score {
+        .showmore {
+          margin-right: 8px;
+          padding-right: 8px;
+        }
+
+        .lowest {
+          color: $border-color;
+        }
+      }
+
+    }
+
+    .score {
+      margin-top: 10px;
+
+      img {
+        margin: auto;
+      }
+    }
+
+    .name-designation {
+      margin-top: 8px;
+
+      p {
+        margin-bottom: 0px;
+      }
+
+      .designation {
+        color: $border-color;
+        margin-top: -3px;
+      }
+    }
+
+    .score-value {
+      // color: #4e6073;
+      margin-top: 8px;
+    }
+  }
+
+  .productivehours {
+    .attendance-border {
+      border-right: 1px solid $line-color
+    }
+
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .ant-card-body {
+      padding-top: 16px;
+      padding-bottom: 0px;
+    }
+
+    .attendance-summary {
+      color: $title-color;
+      text-align: center;
+    }
+
+    // .productive-title{
+    //   color: $grey-color;
+    // }
+
+    .productive-value {
+      color: $progress-color;
+    }
+
+    // .unproductive-title {
+    //   color: $grey-color;
+    // }
+
+    .unproductive-value {
+      color: $error-color;
+    }
+  }
+
+  .topprojects {
+
+    // .ant-card-body{
+    //   padding-bottom: 12px;
+    //   padding-top: 16px;
+    // }
+    .attendance-summary {
+      color: $title-color;
+
+      .title {
+        margin-top: 0;
+      }
+
+      .show-more {
+        color: $border-color;
+      }
+    }
+
+    .top-projetrs-issues-card {
+
+      .attendance-image {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        text-align: center;
+
+        &.green {
+          background-color: $progress-color;
+        }
+
+        &.black {
+          background-color: $title-color;
+        }
+
+        &.yellow {
+          background-color: $orange-color;
+        }
+
+        &.orange {
+          background-color: $lightOrange-color;
+        }
+
+        &.secondary {
+          background-color: $progress-color;
+        }
+      }
+
+      .work-issues {
+        .person-name {
+          margin-top: 13px;
+          margin-left: 10px;
+        }
+
+        .projects-name {
+          color: $white-color;
+          margin: 0px 9px;
+          margin-bottom: 12px;
+          margin-top: 6px;
+        }
+
+        .counter {
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+
+  .total-time-hours-card {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .ant-card-body {
+      padding-top: 16px;
+      padding-bottom: 0px;
+    }
+
+    .attendance-summary {
+      color: $title-color;
+      text-align: start;
+    }
+
+    .idle-minutes {
+      // color: $grey-color;
+      text-align: center;
+    }
+
+    .productive {
+      color: $warning-color;
+      text-align: center;
+    }
+  }
+
+  .tracking-time-card {
+    .ant-btn-default.ant-btn-dangerous {
+      color: #E76F51;
+      border-color: #E76F51;
+    }
+
+    .attendance-summary {
+      color: $title-color;
+
+      .showmore {
+        color: $border-color;
+      }
+    }
+
+    .started-tracking-time {
+      // color: $title-color;
+    }
+
+  }
+
+  .work-balance-issues-container {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+
+    .attendance-summary {
+      color: $title-color;
+      text-align: start;
+
+
+      .title {
+        margin-top: 0;
+      }
+
+      .show-more {
+        color: $border-color;
+      }
+    }
+
+    .work-issues-order1 {
+      order: 1;
+
+      .underutilized-card {
+        &:hover {
+          color: aliceblue;
+        }
+      }
+    }
+
+    // .work-issues-order2 {
+    //   order: 2;
+
+    //   .underutilized-card {
+    //     .hover-white-image-dashboard {
+    //       margin-left: 65px !important
+    //     }
+
+    //     .hover-image {
+    //       display: none;
+    //     }
+
+    //     &:hover {
+    //       .hover-white-image-dashboard {
+    //         display: block;
+    //       }
+
+    //       .hover-image {
+    //         display: block;
+    //       }
+
+    //       border-bottom: 1px solid #FF4D4F;
+    //       color: aliceblue;
+    //     }
+    //   }
+
+    //   @media only screen and (max-width: 1660px) and (min-width: 270px) {
+    //     .underutilized-card {
+    //       border-bottom: 1px solid #FF4D4F;
+
+    //       .hover-white-image-dashboard {
+    //         display: block;
+    //         margin-top: 10px;
+    //         // filter: brightness(0) invert(1);
+    //       }
+
+    //       .hover-image {
+    //         display: none;
+    //       }
+
+    //       &:hover {
+    //         .div-image {
+    //           display: none;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    .work-issues-order2 {
+      order: 2;
+
+      .underutilized-card {
+        .hover-white-image-dashboard {
+          margin-left: 65px !important
+        }
+
+        .hover-image {
+          display: none;
+        }
+
+        &:hover {
+          .hover-white-image-dashboard {
+            display: none;
+          }
+
+          .hover-image {
+            display: block;
+          }
+
+          border-bottom: 1px solid #FF4D4F;
+          color: aliceblue;
+        }
+      }
+
+      @media only screen and (max-width: 1660px) and (min-width: 270px) {
+        .underutilized-card {
+          border-bottom: 1px solid #FF4D4F;
+
+          .hover-white-image-dashboard {
+            display: block !important;
+            margin-top: 10px !important;
+            filter: brightness(0) invert(1);
+          }
+
+          .hover-image {
+            display: none !important;
+          }
+
+          &:hover {
+            .div-image {
+              display: none !important;
+            }
+          }
+
+        }
+      }
+    }
+
+
+
+    .overutilized-work-issues-order {
+      .on-hover-image {
+        display: none;
+      }
+
+      .default-image {
+        display: block;
+      }
+
+      &:hover {
+        .on-hover-image {
+          display: block;
+        }
+
+        .default-image {
+          display: none;
+        }
+      }
+
+
+    }
+
+
+
+
+
+
+
+
+
+    .work-issues-order3 {
+      order: 3;
+      padding-right: 13px !important;
+    }
+
+    .work-issues-order4 {
+      order: 4;
+      padding-left: 13px !important;
+    }
+
+    //Media Queries
+    @media (max-width: 767px) {
+      .work-issues-order1 {
+        order: 1;
+      }
+
+      .work-issues-order2 {
+        order: 3;
+      }
+
+      .work-issues-order3 {
+        order: 2;
+      }
+
+      .work-issues-order4 {
+        order: 4;
+      }
+    }
+
+    .underutilized-card {
+      // border-bottom: "2px solid #FDCA64";
+
+      .utilized-container {
+        box-shadow: '0px 4px 8px -2px rgba(16, 24, 40, 0.1)';
+        border-radius: "4px";
+      }
+    }
+
+    .work-issues {
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+
+    .work-issue-number {
+      color: $orange-color;
+      text-align: end;
+    }
+
+    .work-isses-border {
+      border-right: 1px solid $line-color;
+    }
+
+    .work-issue-number-box {
+      color: $Orange-color;
+      text-align: end;
+    }
+
+    .work-issues-avatar {
+      margin-top: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .idle-time-card {
+      .timetracked {
+        font-size: 24px;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: 420px) and (min-width: 369px) {
+    .circleimage {
+      width: 60px
+    }
+  }
+
+  @media only screen and (max-width: 368px) and (min-width: 280px) {
+    .circleimage {
+      width: 20px
+    }
+  }
+
+  @media only screen and (min-width:1025px) {
+    .top-projetrs-issues-card {
+      display: flex;
+      justify-content: space-between;
+
+      .work-issues {
+        display: flex;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .mostusedServicesGrapgh {
+      transform: rotate(0deg);
+    }
+
+    .work-issues {
+      text-align: -webkit-center;
+    }
+  }
+
+
+  @media only screen and (max-width: 576px) {
+
+    .showmore {
+      margin-left: 9px;
+
+    }
+
+    .top-projetrs-issues-card {
+      display: inline;
+    }
+
+    .work-isses-border {
+      .work-issue-number {
+        text-align: center;
+      }
+
+      .avatar-work-balance {
+        text-align: center;
+      }
+
+      .work-issue-name {
+        text-align: center;
+      }
+    }
+
+    .work-issues-order4 {
+      .work-issue-number-box {
+        text-align: center;
+      }
+
+      .avatar-work-balance {
+        text-align: center;
+      }
+
+      .work-issue-name {
+        text-align: center;
+      }
+    }
+
+    .tracking-time-card {
+      .tracking-time-buttons {
+        padding-bottom: 14px;
+      }
+
+      .avatar-time-tracking {
+        text-align: center;
+      }
+    }
+
+    .employee-month-details {
+
+      .employee-details-card {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1542px) and (min-width: 1200px) {
+
+    .most-used-services-card,
+    .work-balance-issues-container {
+      min-height: 497px !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 270px) {
+    .work-balance-issues-container .work-isses-border {
+      border-right: none !important;
+    }
+
+    .overallscoreManual {
+      .name {
+        text-align: center;
+      }
+    }
+
+    .idleMinutesCard {
+      .name-designation {
+
+        .name,
+        .designation {
+          text-align: center !important;
+        }
+      }
+
+    }
+
+    .overallscroe-card,
+    .productivity-card,
+    .idleMinutesCard,
+    .overallscoreManual,
+    .topprojects {
+      .attendance-summary {
+        flex-direction: column !important;
+
+        .show-more {
+          text-align: end !important;
+        }
+
+        .filter-score {
+          text-align: end !important;
+        }
+      }
+
+      .lowestfiltertext {
+        text-align: center !important;
+      }
+    }
+
+    .organization {
+      .AttendanceSummary {
+        flex-direction: column !important;
+        padding-bottom: 10px !important;
+
+        .filterScore {
+          text-align: end !important;
+        }
+      }
+    }
+
+    .employee-month-details {
+      .employees-month-header {
+        flex-direction: column !important;
+
+        .show-more {
+          text-align: end !important;
+        }
+      }
+    }
+
+    .tracking-time-card {
+      .attendance-summary {
+        .showmore {
+          text-align: end !important;
+        }
+      }
+
+      .name {
+        text-align: center !important;
+      }
+
+      .tracking-time-issues-text,
+      .tracking-time-lastSeen-text {
+        text-align: center !important;
+        text-indent: 0em !important;
+      }
+    }
+
+    .productivity-card {
+      .name-designation {
+
+        .name,
+        .designation {
+          text-align: center !important;
+        }
+      }
+    }
+
+    .overallscroe-card {
+      .name-designation {
+
+        .name,
+        .designation {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1155px) {
+
+    .productivehours,
+    .idle-time-card,
+    .total-time-hours-card {
+      min-height: 224px !important;
+    }
+  }
+
+  @media only screen and (min-width:992px) and (max-width:1155px) {
+    .attendance-summary-card {
+      min-height: 225px !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 1690px) and (min-width: 1640px) {
+    .overallscore {
+      min-height: 408px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1639px) and (min-width: 1489px) {
+    .overallscore {
+      min-height: 450px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1488px) and (min-width: 1319px) {
+    .overallscore {
+      min-height: 482px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 1088px) {
+    .topprojects {
+      padding-bottom: 262px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1089px) and (min-width: 1084px) {
+    .topprojects {
+      padding-bottom: 242px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1083px) and (min-width: 1069px) {
+    .topprojects {
+      padding-bottom: 214px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1068px) and (min-width: 1025px) {
+    .topprojects {
+      padding-bottom: 196px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1542px) and (min-width: 1200px) {
+    .distraction-alert {
+      min-height: 504;
+      ;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) and (min-width: 992px) {
+    .overallscore {
+      .attendance-summary {
+        flex-direction: column !important;
+        padding-bottom: 10px !important;
+      }
+
+    }
+  }
+
+  @media only screen and (max-width: 1302px) and (min-width: 1282px) {
+    .tracking-time-card {
+      padding-bottom: 34px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1281px) and (min-width: 1212px) {
+    .tracking-time-card {
+      padding-bottom: 39px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1211px) and (min-width: 1200px) {
+    .tracking-time-card {
+      padding-bottom: 63 !important;
+
+      .attendance-summary {
+        padding-bottom: 10px !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 280px) {
+    .overallscoreManual {
+      .manual-avatar {
+        justify-content: center !important;
+      }
+    }
+
+    .tracking-time-card {
+      padding-bottom: 10px !important;
+
+      .tracking-avatar {
+        justify-content: center !important;
+      }
+
+      .tracking-time-issues-text {
+        text-indent: 0em !important;
+        text-align: center;
+      }
+
+      .tracking-time-lastSeen-text {
+        text-indent: 0em !important;
+        text-align: center;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1558px) and (min-width: 1200px) {
+    .tracking-time-card {
+      .tracking-time-issues-text {
+        font-size: 9px !important;
+        margin-left: 25px !important;
+        margin-top: 16px !important;
+      }
+
+      .tracking-time-lastSeen-text {
+        font-size: 9px;
+        margin-left: 3px !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1542px) and (min-width: 1200px) {
+    .overallscore {
+      min-height: 500px !important;
+    }
+
+    .underutilized-card {
+      .work-issue-name {
+        margin-left: 4px;
+      }
+
+      .utilized-container {
+        .underutilized {
+          font-size: x-small;
+          font-size: $fs-18;
+          margin-left: -13px;
+        }
+
+        img {
+          width: 12px;
+          height: 12px;
+          margin-left: 27px;
+          margin-top: -10px;
+        }
+
+        p {
+          font-size: $fs-14;
+          margin-left: -10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1542px) and (min-width: 1474px) {
+    .overallscore {
+      min-height: 500px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1473px) and (min-width: 1200px) {
+    .overallscore {
+      min-height: 473px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) and (min-width: 1200px) {
+    .employee-card {
+      .ant-card-body {
+        padding-left: 10px !important;
+      }
+    }
+
+    .overallscore {
+      min-height: 472px !important;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 993px) {
+    .top-projetrs-issues-card {
+      padding-bottom: 8px;
+
+      .work-issues {
+        display: flex;
+      }
+    }
+
+    .employee-month-details {
+
+      min-height: 468px !important;
+
+      .employee-card {
+        .ant-card-body {
+          display: inline !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width:1155px) {
+    .unproductive-time {
+      top: 37% !important;
+    }
+  }
+
+  @media only screen and (max-width:575px) {
+    .unproductive-time {
+      top: 33% !important;
+    }
+  }
+
+  @media only screen and (max-width:575px) and (min-width:270px) {
+
+    .attendance-summary-card,
+    .productivehours {
+      padding-bottom: 13px !important;
+    }
+  }
+
+  @media only screen and (max-width:1199px) and (min-width:270px) {
+
+    // .tracking-time-card{.attendance-summary{.showmore{text-align: end !important;}}
+    // .tracking-time-buttons{margin-left: 0px !important;}
+    .tracking-time-buttons {
+      .resend-button {
+        margin-left: 0px !important;
+      }
+
+      .attendance-summary {
+        .showmore {
+          text-align: end !important;
+        }
+      }
+    }
+
+    .productivehours {
+      .attendance-border {
+        border: none;
+      }
+    }
+
+    .tracking-time-card .attendance-summary {
+      flex-direction: column !important;
+    }
+
+    .attendance-summary-card {
+      .border-sumamry {
+        border: none
+      }
+    }
+
+
+  }
+
+  @media only screen and (max-width:1400px) and (min-width:992px) {
+    .overallscore {
+      .unproductive-sites {
+        font-size: small !important
+      }
+    }
+
+    .attendance-summary {
+
+      .productive-value,
+      .unproductive-value {
+        font-size: large !important;
+      }
+
+    }
+
+    .unproductive-title {
+      margin-left: -10px;
+    }
+  }
+
+  @media only screen and (max-width:1029px) and (min-width:992px) {
+    .overallscoreManual {
+      padding-bottom: 47px !important;
+    }
+  }
+
+  @media only screen and (max-width:1158px) and (min-width:1030px) {
+    .overallscoreManual {
+      padding-bottom: 26px !important;
+    }
+  }
+
+
+
+  // @media only screen and (max-width:1423px) and (min-width:1282px) {
+  //   .overallscoreManual{padding-bottom: 45px !important;}
+  // }
+  @media only screen and (max-width:1281px) and (min-width:1164px) {
+    .overallscoreManual {
+      padding-bottom: 9px !important;
+    }
+  }
+
+  @media only screen and (max-width:116px) and (min-width:768px) {
+    .tracking-time-buttons {
+      text-align: end !important
+    }
+  }
+
+  // @media only screen and (min-width:1067px) and (max-width:1083px) {
+  //   .employee-month-details{
+  //     min-height: 425px !important;
+  //   }
+  // }
+  @media only screen and (max-width:1275px) and (min-width:1200) {
+    .employee-month-details {
+      min-height: 380px !important;
+    }
+  }
+
+  @media only screen and (max-width:1193px) and (min-width:1025px) {
+    .employee-month-details {
+      min-height: 404px !important;
+    }
+  }
+
+  @media only screen and (max-width:1199px) and (min-width:1025px) {
+    .employee-month-details {
+      padding-bottom: 111px !important;
+    }
+  }
+
+  @media only screen and (max-width:1025px) and (min-width:991px) {
+    .top-projetrs-issues-card {
+      .work-issues {
+        display: flex !important;
+        justify-content: space-between !important;
+      }
+    }
+
+    .employee-month-details {
+      min-height: 686px !important;
+      padding-bottom: 35px !important;
+
+      .employee-card {
+        margin-top: 60px !important;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width:1542px) and (min-width:1200px) {
+    .distraction-alert {
+      padding-bottom: 60px !important;
+    }
+
+    .work-issue-name {
+      padding: 0px 10px !important;
+    }
+  }
+
+  @media only screen and (max-width:1542px) and (min-width:991px) {
+    .work-issue-name {
+      padding: 0px 15px !important;
+    }
+  }
+
+  @media only screen and (max-width: 992px) and (min-width: 786px) {
+
+    .employee-month-details {
+      .employee-card {
+        margin-top: 5px !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .attendance-summary-card {
+      margin-top: 10px !important;
+      min-height: 224px !important;
+    }
+  }
+
+  .progress-container {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+  }
+
+  .circleimage {
+    position: absolute;
+    transform: rotate(45deg) translate(-71%, 14%);
+    top: 50%;
+    left: 50.5%;
+    background-color: $white-color;
+    border-radius: 50%;
+  }
+
+  .transition-from-right {
+    transform: scale(-1, 1)
+  }
+
+  .transition-from-right {
+    animation: spin 3s ease-in;
+    color: $white-color !important;
+
+  }
+
+  @keyframes spin {
+    0% {
+      opacity: 0.2;
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0.2;
+      transform: rotate(360deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+
+  }
+
+  @media only screen and (max-width:1063px) and (min-width:1059px) {
+    .tracking-time-card {
+      padding-bottom: 25px !important;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .attandance-cards {
+      margin-top: 10px;
+    }
+
+    .person-name,
+    .counter {
+      text-align: center;
+    }
+
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../../../sass/variables";
+
+.global-setting-form {
+    .ant-input-affix-wrapper {
+        background-color: var(--white-dark-bg);
+        border: 1px solid rgba(160, 172, 187, 0.4);
+    }
+    .ant-input {
+        background-color: var(--white-dark-bg) !important;
+        color: var(--title-color) !important;
+        border: 1px solid rgba(160, 172, 187, 0.4);
+        
+        
+        &::placeholder {
+            color: #A0ACBB;
+            font-weight: $fw-400 !important;
+        }
+    }
+
+    .ant-form-item {
+        .ant-form-item-label>label {
+            color: var(--label-color) !important;
+        }
+    }
+}

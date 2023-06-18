@@ -1,0 +1,41 @@
+// .wrap-team-select-tasks {
+//   .team-select-filter {
+//     margin-bottom: 20px;
+//     flex-wrap: wrap;
+//     .wrap {
+//       :where(.css-dev-only-do-not-override-1cktg1t).ant-select-single:not(
+//           .ant-select-customize-input
+//         )
+//         .ant-select-selector {
+//         height: 36px !important;
+//       }
+//       :where(.css-dev-only-do-not-override-1cktg1t).ant-btn-default {
+//         height: 36px !important;
+//         width: 139px !important;
+//         background: #f4f9ff;
+//         margin-left: 11px;
+//       }
+//       .team-select-search {
+//         width: 260px;
+//         height: 40px;
+//         border: 1px solid #e6e6e6;
+//         border-radius: 4px;
+//       }
+//     }
+//   }
+// }
+// .wrap-status {
+//   :where(.css-dev-only-do-not-override-1cktg1t).ant-select .ant-select-arrow {
+//     display: none !important;
+//   }
+//   :where(.css-dev-only-do-not-override-1cktg1t).ant-select:not(
+//       .ant-select-customize-input
+//     )
+//     .ant-select-selector {
+//     border: none !important;
+//     width: 95px;
+//     height: 28px;
+//     border-radius: 40px;
+//     background: #ffcbcb;
+//   }
+// }

@@ -1,0 +1,63 @@
+@import "../../../sass/variables";
+
+.font-Poppins {
+    font-family: 'Poppins';
+}
+.showTimeCalender {
+
+.showTimeClockCalender {
+    color: $white-color;
+    background-color: $secondary-color;
+    border-radius: 25px;
+
+    p {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+.addTimeBtnCalender {
+    border: none;
+    background-color: transparent;
+    margin: 12px 0;
+
+    .infoIcon {
+        svg {
+            margin: 0 8px;
+        }
+
+        path {
+            color: #264653;
+        }
+    }
+
+    .Addicon {
+        svg {
+            margin-right: 8px;
+        }
+
+        path {
+            color: #E76F51;
+        }
+    }
+}
+.dateTimeCalender {
+    margin: 25px 0;
+
+    .ant-select-single {
+        width: 100%
+    }
+
+    .ant-picker {
+        width: 100%;
+        border: 1px solid #264653;
+        border-radius: 0px;
+    }
+
+    .ant-select-single .ant-select-selector {
+        border: 1px solid #264653;
+        border-radius: 0px;
+    }
+}
+
+}

@@ -1,0 +1,19 @@
+@import "../../../../../sass/variables";
+
+.move-user-modal {
+  width: 445px !important;
+  height: 302px !important;
+  .wrapper-move-user {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .cus--save {
+      color: #fff !important;
+      &:hover {
+        background-color: $secondary-color !important;
+      }
+    }
+  }
+}

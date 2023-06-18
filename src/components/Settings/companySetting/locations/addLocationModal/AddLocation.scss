@@ -1,0 +1,38 @@
+// @import "../../sass/variables";
+
+
+.showTime {
+    margin: 0 0 20px 0;
+
+    .addTimeButton {
+
+        button {
+            border: none;
+            padding: 6px 16px;
+            box-shadow: none;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: #F4F9FF;
+            height: 38px;
+            align-items: center;
+
+            img {
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background-color: #d2e0f1;
+            }
+        }
+    }
+
+         .button-textt {
+        color: #4E6073;
+    }
+
+
+}  
+  .ant-select-single.ant-select-lg .ant-select-selector {
+        border-radius: 0;
+        height: 37px;
+    }

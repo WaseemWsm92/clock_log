@@ -1,0 +1,105 @@
+@import "../../../../sass/variables";
+.gripper-main-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 380px;
+  .apply-work-shedule-filters {
+    margin-bottom: 20px;
+    .apply-work-schedule-btn {
+      background-color: #f4f9ff;
+      width: 203px;
+      height: 36px;
+      justify-content: center;
+    }
+    .date-filters-wrapper--wth-arrow {
+      background-color: rgb(227, 227, 227);
+      width: 200px;
+      height: 40px;
+      border-radius: $border-radius-4;
+    }
+    .select-dropdown-btn {
+      border: 1px solid #e6e6e6;
+      color: #a0acbb;
+      padding: 4px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:hover {
+        border: 1px solid #383838;
+        color: #383838;
+      }
+
+      .ant-space {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .search-input {
+    width: 260px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+      width: 270px;
+      border: 1px solid #272727;
+    }
+  }
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+      margin-inline-start: 0px;
+    }
+  }
+  
+  .ant-dropdown-menu .ant-dropdown-menu-item-active {
+    background-color: rgb(255, 255, 255) !important;
+  }
+
+}
+.group-checkbox-flex {
+  //copy this
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+
+  .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+    margin-inline-start: 0px;
+  }
+}
+
+.users-search-input {
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .gripper-main-filters {
+    flex-direction: column-reverse;
+    .search-input {
+      width: 100% !important;
+      margin-bottom: 10px;
+    }
+  }
+  .apply-work-shedule-filters {
+    .select-dropdown-btn {
+      width: 100% !important;
+    }
+  }
+  .apply-work-schedule-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .gripper-main-filters {
+    margin-left: 0px !important;
+  }
+}
+

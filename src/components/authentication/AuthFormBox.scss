@@ -1,0 +1,39 @@
+.main-box {
+  width: 35rem;
+  box-shadow: 0px 0px 21px 1px rgba(231, 111, 81, 0.19);
+  border-radius: 16px;
+  padding: 20px 50px 30px 50px;
+  background: #ffffff;
+  text-align: start;
+  margin-bottom: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  .icons {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+    .logo-image1 {
+      margin-right: 8px;
+    }
+    .logo-image2 {
+      margin-left: 8px;
+    }
+  }
+}
+
+.component-decription {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #1e3446;
+}
+@media only screen and (max-width: 425px) {
+  .main-box {
+    padding: 20px;
+  }
+  .component-decription {
+    font-size: 25px;
+  }
+}

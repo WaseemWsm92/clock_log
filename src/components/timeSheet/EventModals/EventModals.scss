@@ -1,0 +1,84 @@
+@import '../../../sass/variables.scss';
+
+.timesheet-modal-wrapper {
+    border-radius: 4px;
+    width: 100% !important;
+    max-width: 900px;
+
+    .ant-modal-content {
+        background-color: var(--without-gradient-bg-2);
+        .ant-modal-header {
+            background: none;
+            .ant-modal-title {
+                color: var(--title-color);
+                font-weight: $fw-600;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .ant-modal-close-x {
+            color: var(--title-color);
+        }
+    }
+
+    .event-modal-wrap {
+        background: var(--white-dark-bg);
+        margin-top: 20px;
+        border: 1px solid #DBE4EF;
+        border-radius: 8px;
+        padding: 17px 10px 15px 24px;
+        .event-modal-item {
+            padding-bottom: 8px;
+            &:nth-child(1) {
+                gap: 14px;
+            }
+            .event-link {
+                color: #1890FF;
+            }
+        }
+    }
+    .delete-modal {
+        padding-top: 18px;
+        gap: 8px;
+        justify-content: flex-end;
+        p {
+            text-decoration: underline;
+        }
+    }
+    .ant-modal-footer {
+        display: none;
+    }
+    .gmailModal{
+        border: 1px solid #DBE4EF;
+        padding: 10px;
+    border-radius: 8px;
+        h6{
+            margin: 10px 0;
+        }
+        .m-15{
+            margin: 15px 0;
+        }
+        span{
+            margin-right: 10px;
+        }
+        .ant-progress-line{
+            margin-bottom: 0;
+        }
+    .ant-progress .ant-progress-text{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 940px) {
+    .timesheet-modal-wrapper {
+        width: 100%;
+        max-width: 650px;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .event-link {
+        width: 100%;
+        max-width: 400px;
+    }
+}

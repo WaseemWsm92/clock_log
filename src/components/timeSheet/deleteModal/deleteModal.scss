@@ -1,0 +1,40 @@
+.timesheet-delete-modal {
+    .ant-modal-content {
+        background-color: var(--without-gradient-bg-2);
+        .ant-modal-header {
+            background: none;
+        }
+        .ant-modal-close-x {
+            color: var(--title-color);
+        }
+    }
+    .timesheet-delete-content {
+        padding-top: 15px;
+       
+        .timesheet-delete-wrap {
+           
+            img {
+                background: #F4F9FF;
+                box-shadow: 6px 10px 35px rgba(0, 0, 0, 0.01);
+                padding: 15px 15px;
+                border-radius: 50px;
+            }
+            h2 {
+                padding-top: 12px;
+            }
+            
+        }
+        
+    }
+}
+
+@media screen and (min-width: 815px) {
+    .timesheet-delete-content {
+        .timesheet-delete-wrap {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+         }
+     }
+   
+}

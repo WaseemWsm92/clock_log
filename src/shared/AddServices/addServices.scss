@@ -1,0 +1,23 @@
+.addServicesbtn {
+    // background: #F4F9FF;
+    background-color: var(--btn-theme-color);
+    color: var(--grey-color);
+
+    border-radius: 6px;
+    border: none;
+    width: 170px;
+    // color: #3B4D60;
+
+    &:hover {
+        background-color: #C0E2F2;
+        color: #3B4D60 !important;
+
+        img {
+            filter: brightness(0) invert(0) !important;
+        }
+    }
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}

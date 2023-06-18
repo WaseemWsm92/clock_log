@@ -1,0 +1,76 @@
+@import '../../../../sass/variables.scss';
+
+.work-schedule-modal {
+    .event-modal-btn {
+        gap: 7px;
+        justify-content: flex-end;
+        .button-modal-edit {
+            background: none;
+            border-radius: 6px;
+            border: 1px solid #264653;
+            padding: 7px 24px;
+        }
+        .button-modal-delete {
+            background-color: #FF6A6C;
+            padding: 7px 24px;
+            border-radius: 6px;
+            border: none;
+        }
+    }
+
+    .ant-modal-content {
+        padding: 0 !important;
+
+        background-color: var(--without-gradient-bg-2);
+        .ant-modal-header {
+            padding: 18px 24px;
+            border-bottom: 1px solid #E6E6E6;
+            background: none;
+        }
+        .ant-modal-close-x {
+            color: var(--title-color);
+        }
+
+        .ant-modal-close {
+            top: 24px;
+        }
+
+        .ant-modal-body {
+            padding: 16px 24px;
+        }
+        .ant-modal-footer {
+            padding: 15px 24px 25px 24px;
+        }
+    }
+
+
+    .grid-circle {
+        p {
+            gap: 5px;
+            span {
+                width: 8px;
+                height: 8px;
+                border-radius: 50px;
+                border: 1px solid #FFFFFF;
+              }
+        }
+        
+    }
+    
+    .ant-modal-title {
+        font-weight: $fw-600;
+        font-size: $fs-20;
+        line-height: $line-height-30;
+        color: var(--title-color);
+    }
+
+    .event-modal-details {
+        h2 {
+            color: var(--grey-color);
+        }
+
+        .event-modal-content {
+            padding-top: 32px;
+        }
+    }
+}

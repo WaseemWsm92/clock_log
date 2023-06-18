@@ -1,0 +1,36 @@
+.invitation-status-modal {
+  .ant-table-cell,
+  th.ant-table-cell {
+    color: white !important;
+
+    &::before {
+      background-color: #f0f0f0 !important;
+    }
+  }
+  .wrapper-table .ant-table-thead .ant-table-cel{
+    background-color: #4f5b62 !important;
+  }
+  th.ant-table-cell,
+  .ant-table-cell:first-child {
+    background-color: #4f5b62 !important;
+  }
+  td.ant-table-cell:nth-child(2) {
+    color: #000 !important;
+  }
+  td.ant-table-cell:last-child {
+    cursor: pointer;
+  }
+  tr:nth-child(even) {
+    background-color: white;
+  }
+  tr:hover td {
+    background-color: white !important;
+    border-left: none;
+    &:first-child {
+      border-left: none;
+    }
+  }
+  .ant-modal .ant-modal-header {
+    background-color: var(--white-dark-bg) !important;
+  }
+}

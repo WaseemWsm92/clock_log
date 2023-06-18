@@ -1,0 +1,103 @@
+.wrap-kanban {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(16, 24, 40, 0.25);
+  border-radius: 8px;
+
+  .row-kanban {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    .column-kanban {
+      border: 1px solid #e6e6e6;
+      padding: 10px;
+      border-radius: 4px;
+
+      .completed-tags-wk{
+        .ant-collapse-header{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          color: #fff;
+        }
+      }
+
+      .title-todo {
+        background-color: #ebeaea;
+        color: #4E4B66 ;
+      }
+      .title-progress {
+        background-color: #FDCBCC;
+        color: #FF3737 ;
+      }
+      .title-review {
+        background-color: #C9F2FE;
+        color: #1890FF; 
+      }
+      .title-completed {
+        background-color: #DAFFDB;
+        color: #0FBE16 ;
+      }
+
+      .title-nx-styles {
+        display: flex;
+        align-items: center;
+        gap: 10px;  
+        margin-bottom: 16px;
+      }
+      .title-m{
+        border-radius: 13px;
+        padding: 2px 9px;
+        display: inline-block;
+      }
+      .title-d{}
+
+      // .title-progress {
+      //   height: "28px";
+      //   min-width: 66px;
+      //   background-color: #FFCBCB;
+      //   color: #FF3737;
+      //   border-radius: 13px;
+      //   padding: 2px 24px 2px 9px;
+      //   display: inline-block;
+      //   margin-bottom: 16px;
+      // }
+
+      // .title-review {
+      //   height: "28px";
+      //   min-width: 66px;
+      //   background-color: rgba(33, 204, 255, 0.25);
+      //   color: #1890FF;
+      //   border-radius: 13px;
+      //   padding: 2px 24px 2px 9px;
+      //   display: inline-block;
+      //   margin-bottom: 16px;
+      // }
+
+      // .title-completed {
+      //   height: "28px";
+      //   min-width: 66px;
+      //   background-color: #D9FFDA;
+      //   color: #0FBE16;
+      //   border-radius: 13px;
+      //   padding: 2px 24px 2px 9px;
+      //   display: inline-block;
+      //   margin-bottom: 16px;
+      // }
+
+      .kanban-card {
+        border-radius: 4px;
+        border-left: 2px solid #2A9D8F;
+        background: rgba(231, 111, 81, 0.04);
+        padding: 5px;
+        margin-bottom: 16px;
+      }
+    }
+    :where(.css-dev-only-do-not-override-ka84ni).ant-collapse>.ant-collapse-item >.ant-collapse-header{
+      color: white !important;
+    }
+  }
+
+
+
+}

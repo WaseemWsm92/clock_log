@@ -1,0 +1,105 @@
+@import '../../../../sass/variables';
+
+.tracking {
+    .ant-input-number {
+        width: 100% !important;
+        height: 37px !important;
+        margin-top: 8px !important;
+    }
+
+    .ant-input-number-sm input.ant-input-number-input {
+        height: 0px !important;
+    }
+
+    margin: 20px 0;
+
+    .ant-select-single {
+        width: 100%;
+        margin-top: 4px;
+
+        &:hover {
+            border-color: #ff815e !important;
+        }
+    }
+
+    .ant-select-selector {
+        border-radius: 1px;
+        border: 1px solid rgba(160, 172, 187, 0.4) !important;
+        border-radius: 2px !important;
+        font-size: 14px !important;
+        margin-top: 4px;
+        background-color: var(--white-dark-bg) !important;
+        color: var(--title-color);
+        color: var(--label-color) !important;
+
+        &::placeholder {
+            color: #A0ACBB;
+        }
+
+        &:hover {
+            border-color: #ff815e !important;
+        }
+
+    }
+
+    .ant-select-selection-placeholder {
+        color: #a0acbb !important;
+    }
+
+    .ant-select-arrow {
+        color: #a0acbb !important;
+    }
+
+    .ant-input {
+        height: 38px;
+        font-size: 14px;
+        border: 1px solid rgba(160, 172, 187, 0.4) !important;
+        border-radius: 2px !important;
+        margin-top: 4px;
+        background-color: var(--white-dark-bg) !important;
+        color: var(--title-color);
+
+        &::placeholder {
+            color: #A0ACBB;
+        }
+
+        &:hover {
+            border-color: #ff815e !important;
+        }
+
+
+    }
+
+    .m-t {
+        margin-top: 20px;
+
+    }
+
+    ;
+
+    .m-20 {
+        margin-right: 20px;
+    }
+
+    .screen-cast {
+        font-weight: 600;
+        font-size: 16px;
+
+    }
+
+    .auto-start {
+        font-weight: 600;
+        font-size: 16px;
+
+    }
+
+    .ant-switch.ant-switch-checked {
+        background: #E76F51;
+    }
+
+    .SaveBtn {
+        background-color: #E76F51;
+        height: 40px;
+        margin-top: 40px;
+    }
+}

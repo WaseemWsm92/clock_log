@@ -1,0 +1,71 @@
+.member-wrapper {
+  .activitySearch {
+    width: 260px;
+    margin-left: 5px;
+    transition: width 0.9s ease, background-color 0.9s ease;
+  }
+
+  .project-role {
+    height: 30px;
+    width: 166px;
+    background: rgba(244, 162, 97, 0.2);
+    padding-left: 10px;
+    border-radius: 6px;
+
+    &:hover {
+      background: #f4a261;
+      transition: width 0.9s ease, background-color 0.9s ease;
+      color: white;
+    }
+  }
+
+  .archive-role {
+
+    height: 30px;
+    width: 166px;
+    background: #DBE4EF;
+    padding-left: 10px;
+    border-radius: 6px;
+
+  }
+
+  .table-wrapper {
+    // background: #ffffff;
+    background-color: var(--white-dark-bg);
+    box-shadow: 0px 0px 2px rgba(16, 24, 40, 0.25);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+  }
+
+  .activitySearch:hover {
+    width: 275px;
+    // background-color: #fff;
+  }
+
+  .activitySearch:hover+.what {
+    width: 15%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .activitySearch {
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .activite-search-main {
+      flex-direction: column;
+      display: flex;
+      align-content: center;
+    }
+
+    .btn-create-team {
+      display: flex;
+      align-content: center;
+      justify-content: start;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.first-step {
+  .form-control {
+    height: 54px !important;
+    width: 100% !important;
+  }
+  .phone-input {
+    .react-tel-input {
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+    }
+  }
+  .phone-error-input{
+    .react-tel-input {
+      border: 1px solid #ff4d4f;
+      border-radius: 8px;
+    }
+  }
+  .react-tel-input .form-control {
+    border-radius: 8px;
+    font-family: 'Poppins';
+    color: rgba(38, 70, 83, 0.88);
+    padding-left: 58px;
+    background: #fafafa;
+    border: none;
+  }
+  .react-tel-input .flag-dropdown {
+    width: 54px;
+    padding: 0 0 0 11px;
+    border-radius: 8px 0 0 8px;
+    background: #fafafa;
+    border: none;
+    border-right: 1px solid #d9d9d9;
+  }
+  .react-tel-input .selected-flag:hover {
+    background: #fafafa;
+  }
+}

@@ -1,0 +1,111 @@
+.custom-stepper-wrapper {
+
+  .ant-progress .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+    stroke: #e76f51;
+    transform: rotate(55deg) !important;
+  }
+
+  .btn-secondary-cancel {
+    color: #e76f51;
+    line-height: 24px;
+    font-style: normal;
+    font-size: 16;
+    font-weight: 500;
+    border-radius: 6;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #a0acbb;
+  }
+
+  .ant-steps .ant-steps-item-process .ant-steps-item-icon {
+    background-color: #e76f51;
+    border-color: #e76f51;
+  }
+
+  .ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: #e76f51;
+  }
+
+  .ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {
+    background-color: #e76f51;
+    border-color: #e76f51;
+  }
+
+  .ant-steps.ant-steps-vertical>.ant-steps-item .ant-steps-item-icon {
+    margin-inline-end: 14px;
+  }
+
+  .ant-steps-finish-icon {
+    color: white;
+    width: 14px;
+  }
+
+  .ant-modal-content {
+    border-radius: 4px !important;
+  }
+
+  .ant-steps-item-tail::after {
+    background: #dbe4ef;
+    width: 3px !important;
+    border-radius: 50px;
+    height: 100% !important;
+    padding: 0;
+  }
+
+  .divider {
+    width: 75%;
+    min-width: 60%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    margin-left: 3px;
+    border: 1px solid #e8ecee;
+  }
+
+  .ant-modal-close-x {
+    font-size: 10px;
+    color: #3b4d60;
+  }
+
+  @media only screen and (min-width: 760px) {
+    .stepper-label2 {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    .cancel-button {
+      display: flex;
+      justify-content: end;
+
+    }
+
+    .ant-modal-footer {
+     
+      
+      margin-bottom: 40px;
+    }
+
+    .button-main {
+      width: 10%;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .stepper-label {
+      display: none;
+    }
+
+    .stepper-label2 {
+      display: block;
+    }
+  }
+
+  .ant-steps.ant-steps-with-progress.ant-steps-vertical .ant-steps-item {
+    padding-bottom: 90px;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}

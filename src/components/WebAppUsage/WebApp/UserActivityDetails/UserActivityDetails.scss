@@ -1,0 +1,158 @@
+.user-details {
+  .rightSearch {
+    @media only screen and (max-width: 1000px) {
+      display: flex;
+      justify-content: start;
+    }
+    .date {
+      display: flex;
+      justify-content: end;
+    }
+  }
+  
+  .ant-select-item-option-content {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .site-form-item-icon {
+    font-size: 20px;
+    color: #98a2b3;
+  }
+  @media only screen and (min-width: 1024px) {
+    .webapp-input {
+      width: 260px;
+      margin-left: 5px;
+      transition: width 0.9s ease, background-color 0.9s ease;
+      background-color: var(--card-bg-color) !important;
+      color: var(--title-color) !important;
+      input{
+        background-color: var(--card-bg-color) !important;
+        color: var(--title-color) !important;
+        &::placeholder{
+          color: var(--title-color) !important;
+        }
+      }
+    }
+
+    .webapp-input:hover {
+      width: 275px;
+      background-color: #fff;
+    }
+    .webapp-input:hover + .what {
+      width: 15%;
+    }
+    .select-webapp {
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+
+      height: 39px !important;
+    }
+    .date {
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  // .webapp-input {
+  //   width: 260px;
+  //   margin-left: 5px;
+  //   transition: width 0.9s ease, background-color 0.9s ease;
+  // }
+
+  // .webapp-input:hover {
+  //   width: 275px;
+  //   background-color: #fff;
+  // }
+  // .webapp-input:hover+.what {
+  //   width: 15%;
+  // }
+
+  .select-webapp {
+    // min-width: 260px !important;
+    transition: width 0.9s ease, background-color 0.9s ease;
+  }
+  .ant-select-selector {
+    height: 40px !important;
+    padding: 4px 0px 0px 6px !important;
+  }
+  .ant-select-selector .ant-select-selection-search-input {
+    height: 40px !important;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    display: none;
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .webapp-input {
+      width: 60% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .select-webapp {
+      width: 60% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 10px;
+      height: 39px !important;
+    }
+    .date {
+      display: flex;
+      justify-content: end;
+    }
+
+    .rightSearch {
+      flex-direction: column;
+      display: flex;
+      align-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .webapp-input {
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .select-webapp {
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 10px;
+      height: 39px !important;
+    }
+
+    .date {
+      display: flex;
+      justify-content: end;
+    }
+
+    .rightSearch {
+      flex-direction: column;
+      display: flex;
+      align-content: center;
+    }
+  }
+}
+.user-detials-card{
+  .common-card {
+    .progressText {
+      color: #a0acbb;
+    }
+    &:hover {
+      .progressText  {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.card-btn span.separator {
+    width: 1px;
+    height: 16px;
+    background-color: #D3D3D3;
+}
+
+.icon-button {
+    // background-color: #D4D4D4;
+    background-color: var(--icons-div-color);
+    border: none;
+}
+
+.icon-button.download:hover {
+    background-color: #264653B2;
+    border: none;
+}
+
+.icon-button.delete:hover {
+    background-color: #FF4D4FCC;
+    border: none;
+}
+
+.ant-checkbox .ant-checkbox-inner {
+    background-color: transparent !important;
+    border: 2px solid #DADADA;
+    width: 18px;
+    height: 18px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: transparent;
+    border: 2px solid #FE5C36;
+    padding: 7px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner:after {
+    border-color: #FE5C36 !important;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.innerCard {
+    box-shadow: 0px 0px 18px -2px rgba(16, 24, 40, 0.15);
+    background-image: linear-gradient(#056906, rgb(235, 235, 235));
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+
+    .cardFooter {
+        justify-content: space-between;
+        border-radius: 6px;
+        padding: 12px;
+        align-items: center;
+
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .ssImage {
+        max-width: 192px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+.innerCard::before {
+    content: "";
+    display: block;
+    // background-color: hsla(0, 0%, 100%, 1);
+    background: var(--theme-ss-unselect-card-color);
+    position: absolute;
+    border-radius: calc(20px - 3%);
+    top: 2%;
+    left: 2%;
+    height: 96%;
+    width: 96%;
+    z-index: -1;
+}
+
+.cardMain {
+    background: var(--theme-ss-unselect-card-color);
+    border: none;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
+
+    .cardHeader {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+}

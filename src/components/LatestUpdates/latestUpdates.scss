@@ -1,0 +1,50 @@
+@import "../../sass/variables";
+
+.latestUpdates {
+  .ant-collapse-item {
+    border-bottom: 1px solid var(--line-color);
+  }
+  .ant-collapse-header {
+    padding-block: 7px;
+    &:hover {
+      // background-color: $bgLight-color;
+      background: var(--main-bg-color) !important;
+      .bgLight-color{
+        background: var(--card-bg-color) !important;
+      }
+
+    }
+  }
+  .ant-collapse-item {
+    padding-block: 15px;
+}
+  .accordion-body {
+    .description {
+      // color: #4e6073;
+      text-align: justify;
+    }
+  }
+  .btn-simple {
+    text-align: center;
+    padding-block: 12px;
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 792px) {
+    .ant-collapse-header {
+      padding: 0 !important;
+      p {
+        font-size: 14px !important;
+      }
+      flex-direction: column;
+    }
+    .ant-collapse-expand-icon {
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+      .btn-simple {
+        margin-top: 15px;
+        width: 100%;
+      }
+    }
+  }
+}

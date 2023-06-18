@@ -1,0 +1,182 @@
+.pendingEditModal {
+  .ant-modal-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 700px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fe5c36;
+  }
+  .ant-form-item-label>label {
+    color: var(--label-color);
+  }
+  
+  .ant-select-multiple .ant-select-selection-item {
+    background-color: #f5f5f5;
+    border: 1px solid transparent;
+    border-left: 2px solid #fe5c36;
+    border-radius: 30px;
+  }
+  .wrapper-add-email {
+    position: relative;
+    .ant-select-selector {
+      padding-right: 20px;
+      
+    }
+    .inner-img-email-fld {
+      position: absolute;
+      right: 18px !important;
+      top: 8.5px !important;
+    }
+  }
+
+  .invite-user-modal-member-and-project {
+    border: 1px solid #d9d9d9;
+    min-height: 120px;
+    margin-block: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      border: 1px solid #fe5c36 !important;
+    }
+  }
+}
+.ant-select-single .ant-select-selector .ant-select-selection-item {
+  color: #a0acbb !important;
+}
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item,
+.ant-select-multiple .ant-select-selection-placeholder {
+  color: #a0acbb !important;
+}
+
+// .ant-select-multiple .ant-select-selection-placeholder {
+//     color: var(--label-color) !important;
+// }
+// .users--input-cs-styles {
+//   border-radius: 2px !important;
+//   height: 40px !important;
+//   border-color: #a0acbb;
+//   &:hover {
+//     border-color: #a0acbb;
+//   }
+ 
+//   .ant-select-selector {
+//     border-radius: 2px !important;
+//     align-items: center !important;
+//     border: 1px solid rgba(160, 172, 187, 0.4);
+//     &:hover {
+//       border-color:1px solid  #fe5c36!important;
+//     }
+//   }
+// }
+
+
+.users--input--edit-cs-styles {
+  border-radius: 2px !important;
+  height: 40px !important;
+  border: 1px solid rgba(160, 172, 187, 0.4);
+  &:hover {
+    border-color:1px solid  #fe5c36!important;
+  }
+  &::placeholder{
+    color: var(--label-color) !important;
+  }
+}
+.ant-select-selector {
+  border-radius: 2px !important;
+  height: 40px !important;
+  max-width: 520px !important;
+  align-items: center !important;
+  border: 1px solid rgba(160, 172, 187, 0.4);
+  &:hover {
+    border-color:1px solid  #fe5c36!important;
+  }
+}
+.phone-edit-styles {
+  .react-tel-input .form-control {
+    border-radius: 2px !important;
+    height: 40px !important;
+    border: 1px solid rgba(160, 172, 187, 0.4);
+    &:hover {
+      border-color:1px solid  #fe5c36!important;
+    }
+  }
+  .phone-edit-styles {
+    .react-tel-input .form-control {
+      border-radius: 2px !important;
+      height: 40px !important;
+      border: 1px solid rgba(160, 172, 187, 0.4);
+      &:hover {
+        border-color: 1px solid #fe5c36 !important;
+      }
+      &::placeholder {
+        color: var(--label-color) !important;
+      }
+    }
+    .flag-dropdown {
+      background-color: transparent;
+      border: none;
+      padding-top: 3px;
+    }
+  }
+  .projects-checkboxes {
+    margin-block: 25px;
+    .ant-checkbox-group {
+      flex-wrap: wrap;
+      gap: 15px;
+      .ant-checkbox-wrapper {
+        flex-basis: 28%;
+        margin: 0;
+        @media only screen and (max-width: 768px) {
+          flex-basis: 47%;
+        }
+      }
+    }
+  }
+}
+.ant-input-affix-wrapper{
+  background: var(--without-gradient-bg-2) !important;
+}
+.ant-input-affix-wrapper >input.ant-input {
+  background: var(--without-gradient-bg-2) !important;
+}
+.addMoreProject {
+  .ant-pagination {
+    margin: 20px 0 30px 0px;
+    display: flex;
+    li:first-child {
+      flex: 1 1 0;
+    }
+  }
+}
+.ant-select-dropdown {
+  background-color: var(--select-bg-color) !important;
+  color: var(--title-color) !important;
+  p {
+    color: var(--title-color);
+    &:hover {
+      color: black;
+    }
+  }
+  .ant-select-item-option {
+    color: var(--label-color) !important;
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background: var(--card-bg-color) !important;
+  }
+  input {
+    background-color: var(--select-bg-color) !important;
+    color: var(--title-color) !important;
+  }
+}
+
+// .ant-modal .ant-modal-header {
+//    background-color: var(--white-dark-bg)!important;
+//   }
+

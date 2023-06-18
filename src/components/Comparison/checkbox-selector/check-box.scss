@@ -1,0 +1,24 @@
+.checkbox_selector {
+  width: 272px !important;
+  height: 39px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(160, 172, 187, 0.4) !important;
+  border-radius: 4px !important;
+  background-color: var(--white-dark-bg) !important;
+  color: var(--label-color) !important;
+
+  span {
+    color: #4e4b66;
+    color: var(--label-color) !important;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .checkbox_selector {
+    width: 100% !important;
+    min-width: 170px !important;
+  }
+}

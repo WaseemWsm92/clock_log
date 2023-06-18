@@ -1,0 +1,157 @@
+.tasks-select-filter {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  .wrap-tasks-selected {
+    gap: 11px;
+    flex-wrap: wrap;
+
+    .team-select-search {
+      width: 260px;
+      height: 40px;
+      // border: 1px solid #e6e6e6;
+      background-color: var(--white-dark-bg) !important;
+     
+      border-radius: 4px;
+
+      &:hover {
+        border-color: #ff815e !important;
+      }
+
+      &::placeholder {
+        color: var(--title--color) !important;
+      }
+    }
+
+    .wrap-add-task {
+      height: 36px !important;
+      min-width: 169px !important;
+      padding: 16px;
+      // background: #f4f9ff !important;
+      background: var(--common-btn-bg) !important;
+      cursor: pointer;
+      // color: var(--title--color) !important;
+      border: none !important;
+
+      &:hover {
+        border-color: #ff815e !important;
+      }
+    }
+  }
+
+  :where(.css-dev-only-do-not-override-ka84ni).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 36px;
+    background-color: #F4F9FF;
+    border: none;
+  }
+
+}
+
+.wrap-tasks-table {
+  :where(.css-dev-only-do-not-override-ka84ni).ant-table-wrapper .ant-table-tbody>tr.ant-table-row-selected>td {
+    background: rgba(231, 111, 81, 0.14) !important;
+  }
+}
+
+.wrap-status {
+
+  // background: #d9ffda !important;
+  // border-radius: 25px !important;
+  .ant-select-single .ant-select-selector {
+    border: none !important;
+    border-radius: 25px !important;
+    // background: #d9ffda !important;
+  }
+
+  .ant-select-single {
+    width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 1322px) {
+
+  .tasks-select-filter {
+    .wrap-tasks-selected {
+      .wrap-task-search {
+        width: 100%;
+      }
+
+      .team-select-search {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        
+        border-radius: 4px;
+      }
+
+      .warp-selected {
+        width: 100%;
+        // justify-content: space-between;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  .tasks-select-filter {
+
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 386px) {
+
+  // .tasks-select-filter {
+  //   .wrap-tasks-selected {
+  //     .warp-selected{
+  //       flex-direction: column;
+  //     }
+  //   }
+  // }
+  .tasks-select-filter {
+    .wrap-tasks-selected {
+      .wrap-add-task {
+        height: 40px !important;
+      }
+
+      .warp-selected {
+        width: 90%;
+        flex-direction: column;
+      }
+    }
+  }
+
+}
+
+
+
+.toDoStatus {
+  .ant-select-single .ant-select-selector {
+    background: #EBEAEA;
+    color: #4E4B66;
+  }
+}
+
+.completedStatus {
+  .ant-select-single .ant-select-selector {
+    background: #D9FFDA;
+    color: #0FBE16;
+  }
+}
+
+.progressStatus {
+  .ant-select-single .ant-select-selector {
+    background: #FFCBCB;
+    color: #FF3737;
+  }
+}
+
+.reviewStatus {
+  .ant-select-single .ant-select-selector {
+    background: rgba(33, 204, 255, 0.25);
+    color: #1890FF;
+  }
+}

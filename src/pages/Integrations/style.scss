@@ -1,0 +1,16 @@
+.integration-wrapper {
+  position: relative;
+
+  .addBtn {
+    background-color: #f4f9ff;
+    border-radius: 6px;
+    border: none;
+    color: #3b4d60;
+    padding: 5px 20px;
+
+    &:hover {
+      color: #3b4d60 !important;
+      background-color: #e5ecf3 !important;
+    }
+  }
+}

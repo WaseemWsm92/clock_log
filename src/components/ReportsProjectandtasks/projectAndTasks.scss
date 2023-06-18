@@ -1,0 +1,150 @@
+.project_tasks {
+  .main_heading {
+    justify-content: space-between;
+    display: flex;
+
+    @media only screen and (max-width:320px) {
+      display: block;
+    }
+
+    .date {
+      color: #a0acbb;
+    }
+  }
+
+  .reportsProjectsSmall {
+    margin-bottom: 20px;
+    display: none;
+
+    .dropBtn {
+      width: 50%;
+
+      @media only screen and (max-width: 420px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: 420px) {
+      display: block;
+      text-align: center;
+    }
+
+  }
+
+  .project_tasks_cards {
+    flex-wrap: nowrap;
+    padding-top: 20x;
+    justify-content: space-between;
+    gap: 15px;
+
+    &::-webkit-scrollbar {
+      width: 0px !important;
+      height: 5px !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff00 !important;
+      border-radius: 10px !important;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #dadada !important;
+        border-radius: 10px !important;
+      }
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    display: flex;
+
+    .card {
+      margin: 20px 5px 0px 5px;
+      min-width: 258px !important;
+      height: 267px;
+    }
+
+    .circular_progress {
+      text-align: center;
+      margin: 20px 0px;
+    }
+
+    .common-card {
+
+      .progressText,
+      .card_time {
+        color: #a0acbb;
+      }
+
+      &:hover {
+
+        .progressText,
+        .card_time {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.search_input {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+
+  @media only screen and (max-width: 483px) {
+    display: block;
+  }
+
+  .tasksSearch {
+    width: 260px;
+    margin-left: 5px;
+    transition: width 0.9s ease, background-color 0.9s ease;
+
+    @media only screen and (max-width: 483px) {
+      width: 100% !important;
+    }
+  }
+
+  .tasksSearch:hover {
+    width: 275px;
+
+    // background-color: #fff;
+    @media only screen and (max-width: 483px) {
+      width: 100% !important;
+    }
+  }
+}
+
+.projectDetailsTable,
+.reportsProjectsTable {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.projectDetailsHeader {
+  display: flex;
+  justify-content: space-between;
+
+  .projectDetailsSearch {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .projectDetailsHeader {
+    display: block;
+
+    .projectDetailsSearch {
+      margin-left: 0px;
+      margin-top: 5px;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.project-and-task-table {
+  
+  :where(.css-dev-only-do-not-override-ka84ni).ant-modal .ant-modal-footer {
+    text-align: center !important;
+  }
+  :where(.css-dev-only-do-not-override-ka84ni).ant-table-wrapper
+    .ant-table-tbody
+    > tr.ant-table-row-selected
+    > td {
+    background: rgba(231, 111, 81, 0.14) !important;
+  }
+}
+// ############### Delete Modal ###############
+.archeive-modal {
+  .image-container {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 6px 10px 35px rgba(0, 0, 0, 0.01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff !important;
+  }
+
+  .ant-modal .ant-modal-footer {
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    margin-top: 30px !important;
+  }
+
+  .ant-btn.ant-btn-default {
+    font-weight: 500 !important;
+  }
+
+  .ant-btn.ant-btn-primary {
+    font-weight: 500 !important;
+    background-color: #e9c46a !important;
+  }
+
+  // Small Screen Responsive
+  @media screen and (max-width: 600px) {
+    .ant-modal {
+      width: auto !important;
+      margin: 10px;
+    }
+  }
+}
+// ############### dupl;iacte Modal ###############
+.teams-dupliacte-modal {
+  .image-container {
+    // background: $button-light-bg-color !important;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 6px 10px 35px rgba(0, 0, 0, 0.01);
+    background: #f0f8ff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ant-modal .ant-modal-footer {
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    margin-top: 30px !important;
+  }
+
+  .ant-btn.ant-btn-default {
+    font-weight: 500 !important;
+  }
+
+  .ant-btn.ant-btn-primary {
+    font-weight: 500 !important;
+    background-color: #4E6073 !important;
+  }
+
+  // Small Screen Responsive
+  @media screen and (max-width: 600px) {
+    .ant-modal {
+      width: auto !important;
+      margin: 10px;
+    }
+  }
+}
+
+// active modal *********************
+.active-modal {
+  .image-container {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 6px 10px 35px rgba(0, 0, 0, 0.01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff !important;
+  }
+
+  .ant-modal .ant-modal-footer {
+    text-align: center !important;
+    padding-bottom: 30px !important;
+    margin-top: 30px !important;
+  }
+
+  .ant-btn.ant-btn-default {
+    font-weight: 500 !important;
+  }
+
+  .ant-btn.ant-btn-primary {
+    font-weight: 500 !important;
+    background-color: #2A9D8F !important;
+  }
+
+  // Small Screen Responsive
+  @media screen and (max-width: 600px) {
+    .ant-modal {
+      width: auto !important;
+      margin: 10px;
+    }
+  }
+}
+
+.archeive-styling {
+  height: 66px !important;
+  width: 66px !important;
+  border-radius: 40px;
+  margin: 0 auto;
+  background-color: #f4f9ff !important;
+}

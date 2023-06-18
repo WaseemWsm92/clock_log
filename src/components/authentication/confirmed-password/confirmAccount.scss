@@ -1,0 +1,33 @@
+.confirm-account {
+  text-align: center;
+  img {
+    margin-top: 50px;
+  }
+  .owner-name {
+    margin-bottom: 0;
+    color: #e76f51;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .account-status {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    color: #000;
+  }
+  .account-note {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .sign-in-btn {
+    font-size: 14px;
+    height: auto;
+    background: #e76f51;
+    padding: 12px 30px;
+    margin-top: 40px;
+    border-radius: 6px;
+    &:hover {
+      background: #e76f51;
+    }
+  }
+}

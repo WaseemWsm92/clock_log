@@ -1,0 +1,97 @@
+@import '../../sass/variables.scss';
+
+.customized-wrapper {
+    .profile-information-checkbox {
+        padding-top: 17px;
+        // text-align: center;
+        .ant-checkbox-group {
+            gap: 20px;
+            flex-wrap: wrap;  
+        }
+    }
+    .time-tracked-wrap {
+        padding-top: 16px;
+    }
+
+    .time-tracked-checkbox {
+        padding-top: 14px;
+        .ant-checkbox-group {
+            width: 100%;
+            max-width: 380px;
+            flex-wrap: wrap;
+            gap: 15px;
+            .ant-checkbox-wrapper {
+                width: 100%;
+                max-width: 170px;
+            }
+        }
+    }
+
+    .ant-checkbox-wrapper+.ant-checkbox-wrapper {
+        margin: 0 !important;
+    }
+
+    .ant-checkbox-group {
+        flex-wrap: wrap;
+        span {
+            color: var(--title-color);
+            font-size: $fs-14;
+            line-height: 21px;
+        }
+    }
+
+    .time-format-wrap {
+        padding-top: 25px;
+        h2 {
+            padding-bottom: 2px;
+        }
+    }
+
+    .productivity-format-wrap {
+        padding-top: 17px;
+        h2 {
+            padding-bottom: 15px;
+        }
+        .ant-checkbox-group {
+            width: 100%;
+            max-width: 1050px;
+            flex-wrap: wrap;
+            gap: 15px;
+            .ant-checkbox-wrapper {
+                width: 100%;
+                max-width: 190px;
+            }
+        }
+    }
+    .idle-time-wrap{
+        padding-top: 16px;
+        h2 {
+            padding-bottom: 15px;
+        }
+        .ant-checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            flex-wrap: wrap;
+        }
+    } 
+    .export-wrap {
+        padding-top: 24px;
+        h2 {
+            padding-bottom: 2px;
+        }
+    }
+    .export-btn {
+        padding: 23px 0 60px 0;
+        button {
+            background-color: $secondary-color;
+            padding: 8px 16px;
+            outline: none;
+            border: none;
+        }
+    }
+    .ant-select .ant-select-selector{
+        background-color:  var(--white-dark-bg);
+        color: var(--title-color);
+       }
+}

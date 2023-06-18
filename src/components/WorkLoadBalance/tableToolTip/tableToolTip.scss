@@ -1,0 +1,41 @@
+
+.wrapper-table-tooltip{
+    .class-table--tooltip{
+        background-color: blueviolet;
+    }
+   
+}
+
+.workload-table-inner-popover{
+    // background-color: #00b7ff;
+        width: fit-content;
+        height: fit-content;
+        // color: #fff;
+
+        .utilization-status-styles-wrapper{
+            padding: 10px;
+            .margin--b-16{
+                margin-bottom: 16px;
+            }
+            .utilization-status-styles-content-flex{
+                display: flex;
+                gap: 10px;
+                margin-bottom: 6px;
+                
+                .content-flex-max--width{
+                    margin: 0;
+                    white-space: nowrap;
+                
+                }
+                .content-flex-tag{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: fit-content;
+                    height: 21px;
+                    padding: 0 14px;
+                    border-radius: 20px;
+                }
+            }
+        }
+}

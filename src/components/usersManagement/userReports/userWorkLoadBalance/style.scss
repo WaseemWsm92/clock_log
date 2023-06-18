@@ -1,0 +1,42 @@
+.work-load--wrapper {
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .user-details {
+      display: flex;
+      align-items: center;
+
+      .user-name-email {
+        margin-left: 10px;
+      }
+    }
+
+    .time-stamp {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: end;
+    }
+
+    .date {
+      color: #3b4d60;
+    }
+
+    .email {
+      color: #848588;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  .workLoad-mian-card {
+    margin-top: 50px;
+  }
+
+  .user-table {
+    padding: 1px;
+    height: 45vh !important;
+  }
+}

@@ -1,0 +1,93 @@
+@import '../../../../sass/variables';
+.wrap-archived-content {
+  .selected-members-filter {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    .wrap-member {
+      gap: 11px;
+      .search-member {
+        width: 260px;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        gap: 11px;
+        &:hover{
+          border-color: #ff815e !important;
+      }
+      &::placeholder{
+        color: var(--title--color) !important;
+      }
+      }
+
+      button {
+        height: 36px !important;
+        min-width: 169px !important;
+        padding: 16px;
+        background: #f4f9ff;
+        gap: 11px;
+        border: none;
+      }
+    }
+  }
+  :where(.css-dev-only-do-not-override-1sg6b5s).ant-spin-nested-loading .ant-spin-container{
+    margin-bottom: 20px;
+  }
+  :where(.css-dev-only-do-not-override-ka84ni).ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected > td{
+    background: rgba(231, 111, 81, 0.14) !important
+  }
+}
+
+
+.wrap-archived-teams-content {
+    .selected-teams-filter{
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      .wrap-teams {
+        gap: 11px;
+        .Search-team {
+          width: 260px;
+          height: 40px;
+          border: 1px solid #e6e6e6;
+          border-radius: 4px;
+          gap: 11px;
+          &:hover{
+            border-color: #ff815e !important;
+        }
+        &::placeholder{
+          color: var(--title--color) !important;
+        }
+        }
+  
+        .add-team-button {
+          height: 36px !important;
+          min-width: 169px !important;
+          padding: 16px;
+          background: #f4f9ff;
+          gap: 11px;
+          border: none;
+        }
+      }
+    }
+    :where(.css-dev-only-do-not-override-1sg6b5s).ant-spin-nested-loading .ant-spin-container{
+        margin-bottom: 20px;
+      }
+      :where(.css-dev-only-do-not-override-ka84ni).ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected > td{
+        background: rgba(231, 111, 81, 0.14) !important
+      }
+  }
+  .projectmanager{
+    height: 30px;
+    width: 166px;
+    background: #DBE4EF !important;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    color: #A0ACBB;
+  }
+
+  @media (max-width: 600px){
+    .search-member{
+      width: 100% !important;
+    }
+  }
+  

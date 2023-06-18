@@ -1,0 +1,43 @@
+.inviteUserModal {
+  .ant-modal-content {
+    overflow-x: auto;
+    overflow-x: hidden;
+    height: 700px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fe5c36;
+  }
+}
+
+.projects-checkboxes {
+  margin-block: 25px;
+
+  .ant-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px !important;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    // }
+  }
+}
+
+.addMoreProject {
+  .ant-pagination {
+    display: flex;
+    margin: 20px 0 30px 0px;
+
+    li:first-child {
+      flex: 1 1 0;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@import "../sass/variables";
+
+.siderWrapper {
+  background: transparent;
+
+  .site-layout-no-padding {
+    background-color: transparent;
+    margin-inline: 20px;
+  }
+
+  .sideBar-layout {
+    margin-inline-start: 20px;
+
+    .sideBar-layout-content {
+      padding: 24px 15px 24px 17px !important;
+      border: 1;
+    }
+
+    .site-layout-Nopadding {
+      padding: 0px !important;
+      border: 1;
+      background: transparent;
+    }
+  }
+
+  .ant-layout-sider-children {
+    position: relative;
+  }
+
+  .siderIcon {
+    position: "absolute";
+    top: 0;
+    right: -7;
+    margin-top: 16;
+    padding: "5px";
+    background: "#E76F51";
+    border-radius: "20px";
+  }
+
+  img.ant-menu-item-icon {
+    min-width: auto !important;
+  }
+
+  .ant-menu-item.ant-menu-item-selected {
+    color: #3b4d60;
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-collapsed {
+    min-width: 57px !important;
+    max-width: 61px !important;
+    padding: 0px 0px 0px 7px !important;
+
+    .ant-menu-item {
+      // padding: 30px 0px 30px 13px;
+      padding: 25px 0px 25px 12px;
+      margin: 17px 0px;
+    }
+  }
+
+
+
+
+  .ant-menu-item {
+    padding: 30px 20px 30px 19px;
+    margin-inline: 0 !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-menu-title-content {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .ant-menu-light .ant-menu-item {
+    img {
+      filter: var(--dynamic-img-filter) !important;
+    }
+  }
+
+  .ant-menu-light .ant-menu-item:not(.ant-menu-selected-item):hover {
+    background: var(--report-bg-color);
+    // background: #ffece8;
+    color: var(--title-color);
+  }
+
+  .ant-menu-light .ant-menu-item.ant-menu-item-selected {
+    background: var(--report-bg-color);
+    // background: #ffece8;
+    color: var(--title-color);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .siderWrapper {
+    .sideBar-layout {
+      margin-inline: 0px;
+      padding: 0px !important;
+    }
+
+    .site-layout-no-padding {
+      background-color: transparent;
+      margin-inline: 0px;
+    }
+
+    .sideBar-layout-content {
+      padding: 0px !important;
+      border: 1;
+      background: #fff;
+    }
+
+    .reportsSideBar {
+      display: none;
+    }
+  }
+}

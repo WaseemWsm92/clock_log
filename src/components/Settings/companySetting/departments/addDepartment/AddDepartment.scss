@@ -1,0 +1,9 @@
+.showTime{
+    .addTimeButton{
+        .add-department p{
+                @media only screen and (max-width:300px) {
+                    font-size: 14px;
+                }
+        }
+    }
+}

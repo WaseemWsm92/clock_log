@@ -1,0 +1,27 @@
+@import "../../sass//variables";
+.comparison {
+  // background: #ffffff;
+  .tabs {
+    background-repeat: no-repeat;
+    min-height: 762px;
+    max-height: 862px;
+  }
+  .ant-tabs-tab {
+    padding-top: 0 !important;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: "#3B4D60";
+    font-size: 14;
+    line-height: "21px";
+  }
+}
+@media (max-width: 1500px) {
+  .comparison {
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

@@ -1,0 +1,17 @@
+.export button {
+  background-color: var(--btn-theme-color);
+  border-radius: 6px;
+  border: none;
+  color: var(--grey-color);
+  width: 114px;
+  padding: 4px 20px;
+
+  &:hover {
+    color: #3b4d60 !important;
+    background-color: #e5ecf3 !important;
+
+    img {
+      filter: brightness(0) invert(0) !important;
+    }
+  }
+}

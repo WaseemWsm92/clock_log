@@ -1,0 +1,105 @@
+// .wrap-add-member {
+//   .wrap-teammates {
+//     .team-mates {
+//       border: 1px solid #e8ecee;
+//       height: 155px;
+//       position: relative;
+//       display: flex;
+//       flex-wrap: wrap;
+//       margin-bottom: 20px;
+//       .wrapper-tags-team-mates{
+//         background-color: #e76f51;
+//       }
+//       .selected-members {
+//         background: #f5f5f5;
+//         border-left: 1px solid #e76f51;
+//         padding: 7px 7px;
+//         font-size: 12px;
+//         line-height: 18px;
+//         font-weight: 400;
+//         display: flex;
+//         flex-wrap: wrap;
+//         min-width: 58px;
+//         height: 9px;
+//         border-radius: 10px;
+//         margin-right: 10px;
+//         justify-content: center;
+//         align-items: center;
+//       }
+//       button {
+//         height: 30px;
+//         min-width: 159px;
+//         background: #f5f5f5;
+//         border-radius: 16px;
+//         border: none;
+//         position: absolute;
+//         bottom: 3px;
+//         left: 3px;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+//   .wrap-manager {
+//     .add-member {
+//       border: 1px solid #e8ecee;
+//       height: 155px;
+//       position: relative;
+//       button {
+//         height: 30px;
+//         min-width: 159px;
+//         background: #f5f5f5;
+//         border-radius: 16px;
+//         border: none;
+//         position: absolute;
+//         bottom: 3px;
+//         left: 3px;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
+
+
+.create-project-members {
+  .wrapper-inner-modal-teams{
+    .selected-teams {
+     
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      padding: 10px;
+
+      .selected-members {
+        background: #F5F5F5;
+        border-left: 1px solid #E76F51;
+        padding: 7px 7px;
+        font-size: 12px;
+        line-height: 1px;
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 58px;
+        height: 9px;
+        border-radius: 10px;
+        // margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      
+    }
+    button {
+      padding: 4px 11px;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 8px;
+      left: 7px;
+      /* height: 22px; */
+      margin-top: 20px;
+    }
+  }
+ 
+}

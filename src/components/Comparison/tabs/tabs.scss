@@ -1,0 +1,58 @@
+@import "../../../sass//variables";
+
+.tabs {
+  position: relative;
+  background-repeat: no-repeat;
+
+  .top-date {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+  }
+
+  .tab_row {
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .col-wrapper {
+    max-height: 700px;
+    // background-color: $white-color;
+    background-color: var(--white-dark-bg);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 18px;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .top-date {
+    margin: 0;
+    text-align: right;
+    position: relative !important;
+  }
+
+  .tab_row {
+    gap: 5% !important;
+  }
+}
+
+@media (max-width: 1250px) {
+  .tab_row {
+    gap: 26px !important;
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    background-size: contain;
+  }
+}

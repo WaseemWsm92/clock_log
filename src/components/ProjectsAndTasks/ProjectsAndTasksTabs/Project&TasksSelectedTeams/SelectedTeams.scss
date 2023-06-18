@@ -1,0 +1,93 @@
+@import "../../../../sass/variables";
+.wrap-selected-teams {
+    .selected-teams-filter{
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      .wrap-teams {
+        gap: 11px;
+        .Search-team {
+          width: 260px;
+          height: 40px;
+          border: 1px solid #e6e6e6;
+          border-radius: 4px;
+          gap: 11px;
+        }
+  
+        .add-team-button {
+          height: 36px !important;
+          min-width: 169px !important;
+          padding: 16px;
+          background: #f4f9ff;
+          gap: 11px;
+          border: none;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1160px) {
+    .wrap-selected-teams {
+      .selected-teams-filter {
+        .wrap-teams {
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .wrap-selected-teams {
+      .selected-teams-filter {
+        .wrap-teams {
+          flex-direction: column;
+          .Search-team {
+              width: 100%;
+            }
+        }
+      }
+    }
+  }
+
+  // ############### Delete Modal ###############
+.teams-delete-modal {
+  .image-container {
+      background: $button-light-bg-color !important;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      margin: auto;
+      box-shadow: 6px 10px 35px rgba(0, 0, 0, 0.01);
+
+      .delete-icon {
+          padding-top: 1rem !important;
+          width: 30px;
+          height: 30px;
+      }
+  }
+
+  .ant-modal .ant-modal-footer {
+      text-align: center !important;
+      padding-bottom: 30px !important;
+      margin-top: 30px !important;
+  }
+
+  .ant-btn.ant-btn-default {
+      font-weight: $fw-500 !important;
+      color: $grey-color !important;
+  }
+
+  .ant-btn.ant-btn-primary {
+      font-weight: $fw-500 !important;
+      background-color: $delete-btn-bg-color !important;
+  }
+
+
+  // Small Screen Responsive
+  @media screen and (max-width:600px) {
+      .ant-modal {
+          width: auto !important;
+          margin: 10px;
+      }
+  }
+}
+  

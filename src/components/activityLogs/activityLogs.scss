@@ -1,0 +1,156 @@
+.activity_log {
+  .activityBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .selectFilterBox {
+      display: flex;
+      flex: 0.4 1 0;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      display: block !important;
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    color: var(--label-color) !important;
+  }
+
+
+  .rightSearch {
+    @media only screen and (max-width: 1100px) {
+      margin: 10px 0;
+    }
+  }
+
+  .acivitiyTable {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .activitySelect {
+    width: 272px;
+
+    .ant-select-selector {
+      border-radius: 4px !important;
+      width: 100%;
+      height: 40px;
+      padding: 0 11px;
+      align-items: center;
+    }
+  }
+
+  .activitySelect1 {
+    width: 272px;
+    margin-left: 10px;
+
+    .ant-select-selector {
+      border-radius: 4px !important;
+    }
+
+  }
+
+  .rightSearch {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    .column_btns {
+      border: none;
+
+      &:hover {
+        // background-color: #f4f9ff;
+        // color: #3b4d60 !important;
+      }
+    }
+
+    .activitySearch {
+      width: 260px;
+      height: 39px;
+      margin: 0px 5px 0px 5px;
+      transition: width 0.9s ease, background-color 0.9s ease;
+      background-color: var(--white-dark-bg);
+
+      svg {
+        color: var(--label-color);
+      }
+
+      input {
+        color: var(--label-color);
+        background-color: var(--white-dark-bg);
+
+        &::placeholder {
+          color: var(--label-color);
+        }
+      }
+
+      @media only screen and (max-width: 483px) {
+        width: 100%;
+      }
+    }
+
+    .activitySearch:hover {
+      width: 275px;
+      background-color: var(--white-dark-bg);
+
+      @media only screen and (max-width: 483px) {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1425px) {
+    .activityBar {
+      display: block;
+      gap: 20px;
+    }
+
+    .selectFilterBox {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 5px;
+
+    .activityBar {
+      .selectFilterBox {
+        display: block;
+      }
+
+      .activitySelect {
+        width: 100% !important;
+        margin: 0;
+      }
+
+      .activitySelect1 {
+        width: 100% !important;
+        margin-top: 10px;
+        margin-left: 0;
+      }
+
+      .activitySearch {
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .rightSearch {
+      flex-direction: column;
+    }
+  }
+
+  // .ant-select-selection-item span {
+  //   color: var(--title-color);
+  //   background-color: transparent !important;
+  // }
+  li.ant-pagination-prev {
+    max-width: 10px;
+  }
+}

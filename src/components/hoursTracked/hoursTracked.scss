@@ -1,0 +1,290 @@
+@import "../../sass/variables";
+.hour-tracked--wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white-dark-bg) !important;
+  .wrapper-fr-date{
+    position: relative;
+  }
+  .flex-abs{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+  }
+  .hours-tracked-head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    .date-tags-lower{
+
+    }
+  }
+  .main-cards-flex{
+    display: flex;
+    overflow: auto;
+    flex-direction: row;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .wrapper-card-times{
+    width: 302px;
+    &:hover{
+      .offHover{opacity: 0 !important;}
+      .onHover{opacity: 1 !important;}
+    }
+  }
+  .hourtracked-mian-card {
+    margin-top: 10px;
+  }
+  .card-image-wrapper{
+    position: relative;
+    width: 36px;
+      height: 36px;
+    .main-card-image {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      margin-top: -23px;
+      z-index: 1;
+    }
+    .offHover{opacity: 1; transition: 0.5s;}
+    .onHover{opacity: 0; transition: 0.5s;}
+  } 
+  .wrapper-tracked-info-content {
+    width: 100%;
+    height: 45vh;
+    margin-top: 5px;
+    // background: $white-color;
+    // background: var(--card-bg-color);
+    box-shadow: 0px 0px 2px rgb(16 24 40 / 25%);
+    border-radius: 8px;
+    padding: 20px;
+    overflow: scroll;
+    .ant-collapse-borderless {
+      background-color: var(--white-dark-bg) !important;
+      border: 0 !important;
+    }
+    .h--100 {height: 130px !important;}
+    .h--auto { height: auto; }
+    .tracked-info-flex {
+      position: absolute;
+      padding: 10px;
+      overflow: scroll;
+      white-space: nowrap;
+      display: -webkit-box;
+      flex-wrap: nowrap;
+      gap: 15px;
+      width: 100%;
+      margin-left: -10px;
+      .tracked-info-inner-cards-low {
+        background: $white-color;
+        border: 1px solid #dbe4ef;
+        border-radius: 10px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 13px;
+        width: 309px;
+      }
+    }
+    .ant-collapse-content-box {
+      padding: 0;
+    }
+    .wrapper-header {
+      // border: 1px solid #e6e6e6;
+      box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+      border-radius: 4px;
+      padding: 10px;
+    }
+    .bg--light {
+      // background: #f8f8f8;
+    }
+    .bg--none {
+      background: unset !important;
+      border: none;
+      box-shadow: none;
+    }
+    .ant-collapse-header {
+      background: var(--white-dark-bg) !important;
+      border: none;
+      padding: 0px !important;
+    }
+    .ant-collapse-item {
+      border-bottom: none;
+      margin-bottom: 24px;
+      background-color: var(--white-dark-bg) !important;
+    }
+  }
+  .custom-scroll-hor {
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff00;
+      border-radius: 10px;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #dadada;
+        // background-color: $primary-color;
+        border-radius: 10px;
+      }
+    }
+  }
+  .custom-scroll {
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff00;
+      border-radius: 10px;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #e5e5e5;
+        border-radius: 10px;
+      }
+    }
+  }
+  .no-scroll-track {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff00;
+      border-radius: 10px;
+    }
+  }
+  .rem-bg-trc { background-color: #f8f8f8;}
+  .tracked-info-cnt-wrapper {
+    border: 1px solid #e6e6e6;
+    box-shadow: $card-box-shadow;
+    border-radius: $border-radius-4;
+    margin-bottom: 15px;
+  }
+  .down-icon {
+    color: #264653;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .ico--active {
+    color: $primary-color !important;
+  }
+  .detailed-time-cards {
+    height: 140px;
+    border-radius: 15px;
+    background-color: #e4e4e4;
+    position: relative;
+    margin-bottom: 20px;
+    width: 98%;
+    margin: 0 auto;
+  }
+  .ant-collapse-header {
+    position: relative;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    .ant-collapse-expand-icon {
+      display: none !important;
+    }
+  }
+  .dispNone {display: -webkit-box !important;}
+  .dispBlock { display: none !important;}
+  .wrapper-table-inset {
+    overflow: scroll;
+    width: 100%;
+    height: 30vh;
+    box-shadow: 0px 0px 1.95244px rgba(16, 24, 40, 0.25);
+border-radius: 7.80974px;
+    .ant-table-thead {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: #fff;
+    }
+  }
+}
+.multi-progress-bar {
+  background-color: lightgrey;
+  width: 505.68px;
+  height: 11.71px;
+  border-radius: 11.7146px;
+  display: flex;
+  overflow: hidden;
+  .bar-slots {
+    height: 11.71px;
+  }
+  .p--green {
+    background-color: $light-green-progress-color;
+  }
+  .p--red {
+    background-color: $error-color;
+  }
+  .p--yellow {
+    background-color: $low-yellow-color;
+  }
+  .p--grey {
+    background-color: #d9d9d9;
+    color: #000 !important;
+  }
+}
+.class-tooltip {
+  font-size:  $fs-14;
+  font-weight: 600;
+  .ant-tooltip-content {
+    .ant-tooltip-arrow {
+      display: none;
+    }
+    .ant-tooltip-inner {
+      border-radius: 20px;
+      padding: 6px 11px;
+    }
+  }
+}
+.day-off {
+  .ant-tooltip-inner {
+    color: $black-color !important;
+  }
+}
+
+
+  //Media Queries
+  @media (max-width: 800px) {
+    .multi-progress-bar{
+      width: 30vw;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hour-tracked--wrapper {
+      padding: 0 !important;
+    }
+    .res-font-16 {
+      font-size: 13px !important;
+    }
+    .h--100 {
+      height: 140px !important;
+    }
+    .wrapper-card-times {
+      width: 227px !important;
+    }
+    .wrapper-tracked-info-content{
+      padding: 9px !important;
+    }
+    .tracked-info-inner-cards-low{
+      width: 215px !important;
+    }
+    .flex-abs {
+      position: unset !important;
+      margin-left: 11px !important;
+  }
+  }

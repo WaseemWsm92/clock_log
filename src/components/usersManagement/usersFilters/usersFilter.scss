@@ -1,0 +1,184 @@
+.wrap-user-management-myFilters {
+  .ant-table-content {
+    @media only screen and (min-width: 1025px) {
+      overflow: hidden !important;
+    }
+  }
+}
+// .column_btns {
+//   border: none;
+//   &:hover {
+//     background-color: #f4f9ff;
+//     color: #3b4d60 !important;
+//   }
+// }
+
+// .wrap-user-mangement-main {
+// .popover-content-teams {
+//   width: 300px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 14px;
+//   padding: 10px;
+//   @media only screen and (max-width: 500px) {
+//     width: auto !important;
+//     flex-direction: column;
+//   }
+// }
+
+// .ant-popover-inner {
+//   padding: 5px !important;
+//   .ant-menu-item {
+//     padding-inline: 10px 9px !important;
+//     margin: 0 !important;
+//     height: 35px !important;
+//     line-height: 30px !important;
+//     border-radius: 4px !important;
+//   }
+// }
+.users-management-filter-checkbox-style {
+  .ant-checkbox-wrapper {
+    margin-inline-start: 0 !important;
+    display: flex !important;
+    padding-block: 5px;
+  }
+  .ant-checkbox-group {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .pagination-list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--title-color);
+  }
+  .ant-tabs .ant-tabs-tab-btn {
+    color: var(--title-color);
+  }
+  input {
+    background-color: var(--select-bg-color);
+    color: var(--title-color);
+    &::placeholder {
+      color: var(--title-color);
+    }
+  }
+  .ant-input-affix-wrapper {
+    background-color: var(--select-bg-color);
+    color: var(--title-color);
+  }
+  
+}
+// .action_btns {
+//   padding-block: 4px;
+//   img {
+//     margin-right: 7px;
+//   }
+// }
+// .restore-icon {
+//   background-color: #f4a261;
+//   color: white;
+// }
+// .del-icon {
+//   background-color: #ff4d4f;
+//   color: white;
+// }
+
+.wrap-user-management-myFilters {
+  .user-management-icon-bg-style-delete {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 77, 79, 0.8);
+    border-radius: 50%;
+
+    &:hover {
+      background: #ff4d4f;
+    }
+  }
+  .user-management-icon-bg-style-restore {
+    width: 36px;
+    height: 36px;
+    background: #faad14;
+    border-radius: 50%;
+  }
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .filtersColumns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      .activitySearch {
+        width: 260px;
+        margin-left: 5px;
+        transition: width 0.3s ease, background-color 0.3s ease;
+        color: var(--label-color);
+        background-color: var(--white-dark-bg);
+        border: 1px solid rgba(160, 172, 187, 0.4) !important;
+        border-radius: 4px !important;
+        input {
+          color: var(--label-color);
+          background-color: var(--white-dark-bg);
+          &::placeholder {
+            color: var(--label-color);
+          }
+        }
+        .wrap-invite-status{
+        .user-invitation-status-btn {
+          border: 1px solid rgba(160, 172, 187, 0.4) !important;
+          background: var(--user-btn-color) !important;
+          border-radius: 4px;
+          width: 175px;
+          height: 39px;
+          color: var(--label-color);
+        }
+      }
+        @media only screen and (max-width: 328px) {
+          .ant-dropdown {
+            width: 85% !important;
+          }
+          .ant-dropdown .ant-dropdown-menu {
+            width: 85% !important;
+          }
+        }
+        @media only screen and (max-width: 483px) {
+          width: 100%;
+        }
+      }
+      .activitySearch:hover {
+        width: 275px;
+        background-color: var(--white-dark-bg);
+        @media only screen and (max-width: 483px) {
+          width: 100%;
+        }
+      }
+      .ant-btn-default {
+        color: var(--label-color) !important;
+        border: 1px solid rgba(160, 172, 187, 0.4) !important;
+        // background-color: var(--white-dark-bg) !important;
+        height: 39px;
+        &:hover {
+          border-color: 1px solid#ff815e !important;
+        }
+        @media only screen and (max-width: 328px) {
+          width: 180px !important;
+        }
+      }
+      
+    }
+    @media only screen and (max-width: 1500px) {
+      flex-direction: column;
+    }
+  }
+}
+
+// }
+@media only screen and (max-width: 328px) {
+  .ant-dropdown {
+    width: 85% !important;
+  }
+  .ant-dropdown .ant-dropdown-menu {
+    width: 85% !important;
+  }
+}
+

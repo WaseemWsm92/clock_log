@@ -1,0 +1,87 @@
+.wrapper-manage-team {
+  .active-team-main {
+    padding: 10px;
+    // background: #ffffff;
+    background-color: var(--white-dark-bg) !important;
+    box-shadow: 0px 0px 2px rgba(16, 24, 40, 0.25);
+    border-radius: 8px;
+  }
+
+  .manage-table-main {
+    margin-top: 18px;
+    // background: #ffffff;
+    background-color: var(--white-dark-bg) !important;
+    box-shadow: 0px 0px 2px rgba(16, 24, 40, 0.25);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .manage-team-image {
+    max-width: 100%;
+  }
+
+  .activitySearch {
+    width: 260px;
+    margin-left: 5px;
+    transition: width 0.9s ease, background-color 0.9s ease;
+    background-color: var(--white-dark-bg);
+    color: var(--label-color)!important;
+  }
+
+  .activitySearch:hover {
+    width: 275px;
+    // background-color: #fff;
+    background-color: var(--white-dark-bg);
+  }
+
+  .activitySearch:hover+.what {
+    width: 15%;
+  }
+
+  .manage-image {
+    margin-top: 100px;
+  }
+ .ant-input-affix-wrapper >input.ant-input {
+  background-color: var(--white-dark-bg);
+  color: var(--label-color)!important;
+ }
+
+
+  @media only screen and (max-width: 760px) {
+
+    .wrapper-search {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+
+      .activitySearch {
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: var(--white-dark-bg);
+      }
+
+    }
+
+    .manage-image {
+      margin-bottom: 100px;
+    }
+
+    .activite-search-main {
+      flex-direction: column;
+      display: flex;
+      align-content: center;
+      width: 100%;
+
+    }
+
+    .btn-create-team {
+      display: flex;
+      align-content: center;
+      justify-content: start;
+    }
+  }
+}

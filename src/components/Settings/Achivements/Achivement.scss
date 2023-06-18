@@ -1,0 +1,21 @@
+@import "../../../sass/variables";
+
+.achivements-main {
+    .ant-tabs-tab {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .ant-tabs-tab-btn {
+            color: var(--grey-color);
+            font-size: $fs-14 !important;
+            font-weight: $fw-400 !important;
+        }
+    }
+
+    // Tab underground bar and padding
+    .ant-tabs-nav-list {
+        gap: 1.875rem;
+        padding: 0.85rem 1rem !important;
+        margin: 0;
+    }
+}

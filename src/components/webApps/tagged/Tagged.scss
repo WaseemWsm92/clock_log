@@ -1,0 +1,184 @@
+@import "../../../sass/variables";
+
+// sass/variables
+.webAppTagged {
+
+  .ant-select-single {
+    width: 100%;
+  }
+
+  .ant-input-affix-wrapper>input.ant-input {
+    background-color: var(--white-dark-bg) !important;
+
+    &::placeholder {
+      color: #A0ACBB;
+    }
+  }
+
+  .select-label-color {
+    color: var(--label-color) !important;
+  }
+
+  .ant-select-single .ant-select-selector,
+  .ant-input-affix-wrapper {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-dark-bg) !important;
+    color: var(--title-color);
+
+    &::placeholder {
+      color: #A0ACBB;
+    }
+
+    &:hover {
+      border-color: #ff815e !important;
+    }
+  }
+
+  .search_wrapper {
+
+    .ant-select-single .ant-select-selector,
+    .ant-input-affix-wrapper {
+      float: right;
+      width: 260px;
+      transition: 0.3s;
+
+      &:hover {
+        width: 270px;
+        border: 1px solid #272727;
+        transition: 0.3s;
+      }
+
+      @media only screen and (max-width: 767px) {
+        margin: 20px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.TaggedTable {
+
+  .ProductivityStatusTagged {
+    .ant-select-single .ant-select-selector {
+      border: none;
+      border-radius: 25px;
+      background: rgba(244, 162, 97, 0.2);
+      align-items: center;
+
+    }
+
+    .ant-select .ant-select-arrow {
+      display: none;
+    }
+
+    .ant-select-single {
+      font-size: 14px;
+      width: 85%;
+      transition: 1s;
+
+      &:hover {
+        width: 92%;
+        transition: 1s;
+      }
+    }
+
+    &:hover .ant-select .ant-select-arrow {
+      display: flex;
+      transition: 2s;
+    }
+  }
+
+  .NeutralStatus {
+    .ant-select-single .ant-select-selector {
+      background: #EBEAEA;
+
+      &:hover {
+        background: #EBEAEA;
+        color: #4E4B66;
+      }
+    }
+
+  }
+
+  .ProductiveStatus {
+    .ant-select-single .ant-select-selector {
+      background: #D9FFDA;
+      color: #0FBE16;
+
+      &:hover {
+        background: #D9FFDA;
+        color: #0FBE16;
+      }
+    }
+
+  }
+
+  .UnproductivelStatus {
+    .ant-select-single .ant-select-selector {
+      background: #FFCBCB;
+      color: #FF3737;
+
+      &:hover {
+        background: #FFCBCB;
+        color: #FF3737;
+      }
+    }
+
+  }
+
+  .ant-select-selector {
+    height: 37px;
+    border-radius: 2px;
+    margin-top: 4px;
+    background-color: var(--white-dark-bg);
+
+    // color: var(--title-color);
+    &::placeholder {
+      color: #A0ACBB;
+    }
+
+    &:hover {
+      border-color: #ff815e !important;
+    }
+  }
+
+  .ant-select-selection-placeholder {
+    color: var(--label-color) !important;
+  }
+
+  .ant-select-arrow {
+    color: var(--label-color) !important;
+  }
+
+  .ant-select-single .ant-select-selector {
+    background: rgba(244, 162, 97, 0.2);
+    border: none;
+
+  }
+
+  .ant-select-single {
+    font-size: 14px;
+    width: 85%;
+  }
+
+  .ant-table-wrapper .ant-table-tbody>tr.ant-table-row-selected>td {
+    background-color: #e76f5124;
+  }
+
+  .ant-table-wrapper .ant-table-tbody>tr.ant-table-row-selected>td:first-child {
+    border-left: 4px solid #E76F51;
+  }
+
+}
+
+.TaggedTable .ant-select-single .ant-select-selector {
+  &:hover .ant-select-arrow {
+    color: $white-color;
+  }
+}
+
+.ant-modal .ant-modal-close-x {
+  font-size: 13px;
+}

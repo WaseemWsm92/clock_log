@@ -1,0 +1,45 @@
+.stepper-two {
+  position: relative;
+
+  .stepper-main {
+    position: absolute;
+    right: 0;
+    margin-top: 270px;
+    // bottom: 0;
+  }
+  .ant-form-item-explain-error {
+    position: absolute;
+  }
+
+  .stepper-main2 {
+    position: absolute;
+    right: 0;
+    margin-top: 6px;
+  }
+
+  .stepper-main3 {
+    position: absolute;
+    right: 0;
+    margin-top: 198px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .stepper-two {
+    .stepper-main {
+      margin-top: 285px;
+    }
+
+    .stepper-main2 {
+      position: absolute;
+      right: 0;
+      margin-top: 47px;
+    }
+
+    .stepper-main3 {
+      position: absolute;
+      right: 0;
+      margin-top: 210px;
+    }
+  }
+}

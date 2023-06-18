@@ -1,0 +1,40 @@
+.employee-Burnout {
+    margin: 20px 0;
+    .ant-select-single{
+        width: 100%;  
+        margin-top: 4px;
+    }
+    .ant-select-selector{
+        border-radius: 1px;
+        font-size: 14px !important;
+        border: 1px solid rgba(160, 172, 187, 0.4) !important;
+        border-radius: 2px !important;
+        margin-top: 4px;
+        background-color: var(--white-dark-bg) !important;
+        color: var(--title-color);
+        color: var(--label-color) !important;
+        &::placeholder{
+            color: #A0ACBB;
+        }
+        &:hover{
+            border-color: #ff815e !important;
+        }
+    }
+    .ant-select-selection-placeholder{
+        color: #a0acbb !important;
+    }.ant-select-arrow{
+        color: #a0acbb !important;
+    }
+    .m-t{
+        margin-top: 20px;
+
+    };
+    .m-20{
+        margin-right: 20px;
+    }
+    .SaveBtn{
+        background-color: #E76F51;
+        height: 40px;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,68 @@
+.addServicesbtn {
+    // background: #F4F9FF;
+    background-color: var(--btn-theme-color);
+    color: var(--grey-color);
+
+    border-radius: 6px;
+    border: none;
+    width: 170px;
+    // color: #3B4D60;
+    position: absolute;
+    right: 5%;
+    z-index: 10;
+
+    &:hover {
+        background-color: #C0E2F2;
+        color: #3B4D60 !important;
+    }
+
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
+}
+
+.ant-tabs-nav::before {
+    border: 1px solid #E6E6E6 !important;
+
+}
+
+// .ant-tabs .ant-tabs-tab-btn{
+//     color: var(--grey-color) !important;
+// }
+
+// .ant-tabs-tab {
+//     .ant-tabs-tab-btn {
+//         color: #3B4D60 !important;
+//         font-size: 14px !important;
+//         font-weight: 500 !important;
+//         color: var(--grey-color) !important;
+//     }
+//     // When active
+//     &.ant-tabs-tab-active {
+//         .ant-tabs-tab-btn {
+//             color: #FE5C36 !important;
+//             font-weight: 400 !important;
+//         }
+//     }
+// }
+
+
+// Tab underground bar
+.ant-tabs-nav-list {
+    .ant-tabs-ink-bar {
+        background-color: #FE5C36 !important;
+
+    }
+}
+
+.ant-tabs-nav-list {
+    gap: 1.875rem;
+    padding: 0.85rem 1rem !important;
+    margin: 0;
+}
+
+
+
+.mb-10 {
+    margin-bottom: 10px;
+}

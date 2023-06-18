@@ -1,0 +1,93 @@
+@import "../../sass/variables.scss";
+
+.add-work-modal-wrapper {
+  width: 100% !important;
+  max-width: 805px !important;
+
+  .ant-modal-content {
+    padding: 16px 24px !important;
+    background-color: var(--without-gradient-bg-2);
+
+    .ant-modal-header {
+      background: none;
+    }
+
+    .ant-modal-close-x {
+      color: var(--title-color);
+    }
+  }
+
+  .ant-modal-header {
+    .ant-modal-title {
+      font-size: $fs-24;
+      line-height: 36px;
+      font-weight: $fw-600;
+      color: var(--title-color) !important;
+    }
+  }
+
+  .ant-select-selector,
+  .ant-picker,
+  .ant-input {
+    border-radius: 2px !important;
+  }
+
+  .add-work-wrapper {
+    padding-top: 5px;
+  }
+
+  .apply-work-field-wrap {
+    .container-400 {
+      width: 400px;
+    }
+
+    label {
+      display: block;
+      color: var(--label-color);
+    }
+
+    .ant-picker {
+      width: 100%;
+    }
+
+    .tag-overall-time {
+      margin: 0;
+      margin-top: 22px;
+      text-align: left;
+    }
+
+    .field-relaxation-time {
+      height: 37px;
+      // border: 1px solid #c7c7c7;
+      border: 1px solid rgba(160, 172, 187, 0.4) !important;
+      display: flex;
+      align-items: center;
+      padding: 0px 6px;
+      border-radius: 2px;
+    }
+
+  }
+}
+
+.relaxation-time-modal-wrapper {
+  width: 100% !important;
+  max-width: 305px !important;
+
+  .cus--input-number-rextime {
+    height: 37px;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    margin: 24px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tag-overall-time {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .container-400 {
+    width: 100% !important;
+  }
+}

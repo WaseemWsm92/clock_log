@@ -1,0 +1,47 @@
+.setting-signIn {
+    .ant-select-single{
+        width: 100%;  
+        margin-top: 4px;
+    }
+    .ant-select-selector{
+        border-radius: 1px;
+        height: 37px !important;
+    }
+    .ant-input {
+        height: 37px;
+        border-radius: 2px;
+        margin-top: 4px;
+
+    }
+    .select-label-color{
+        color: var(--label-color) !important;
+      }
+    .m-t{
+        margin-top: 20px;
+
+    };
+    .m-25{
+        margin-right: 25px;
+    }
+    .m-15{
+        margin-right: 15px;
+    }
+    .screen-cast{
+        font-weight: 600;
+        font-size:16px;
+
+    } 
+     .auto-start{
+        font-weight: 600;
+        font-size:16px;
+
+    }
+    .ant-switch.ant-switch-checked{
+        background: #E76F51;
+    }
+    .SaveBtn{
+        background-color: #E76F51;
+        height: 40px;
+        margin-top: 40px;
+    }
+}

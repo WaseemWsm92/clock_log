@@ -1,0 +1,32 @@
+.taskDependencies-wrapper {
+    .ant-checkbox-checked .ant-checkbox-inner {
+        display: none;
+        margin-top: 10px;
+    }
+    .add-icon{
+        margin-right: 10px;
+    }
+    .dependencies{
+       padding-left: 10px;
+ 
+    }
+    .relation-dependencies{
+        background: #F5F5F5 ;
+        border-left: 1px solid green ;
+        border-radius: 16px ;
+        padding-Inline: 5px ;
+    }
+    .tasks-dependencies{
+        background: #F5F5F5;
+        border-left: 1px solid #E76F51;
+        border-radius: 16px ;
+        padding-Inline: 5px ;
+      }
+
+    .ant-select-selector {
+        height: 40px !important;
+        padding: 4px 0px 0px 6px !important;
+    }
+
+    
+}

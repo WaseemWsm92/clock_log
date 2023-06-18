@@ -1,0 +1,39 @@
+.auth-footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .copy-rights {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    padding-inline: 30px;
+    color: #1e3446;
+    span {
+      color: #e76f51;
+      font-weight: 500;
+    }
+  }
+  .cookie-policy {
+    text-align: center;
+    color: #1e3446;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    .icon {
+      margin-right: 18px;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .auth-footer {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+}

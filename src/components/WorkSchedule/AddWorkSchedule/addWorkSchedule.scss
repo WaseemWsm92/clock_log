@@ -1,0 +1,86 @@
+@import "../../../sass/variables";
+
+.add-work-schedule-main-wrapper{
+    width: 100%;
+    // height: 300px;
+    .delete-button-work-schedule{
+        background-color: $error-color;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .applied-days-flex{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .rounded-days{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .wrapper-width--scroll{
+        .ant-table-content{
+            width: 100%;
+            overflow: scroll;
+        }
+    }
+    .wrapper-lower-head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        
+        .search-input{
+            width: 260px;
+            border: 1px solid #E6E6E6;
+            border-radius: $border-radius-4;
+          
+            transition: 0.3s;
+            &:hover{
+                width: 270px;
+                border: 1px solid #272727;
+            }
+        }
+    }
+    .table-wrap-border{
+        border: 1px solid #e7e7e9;
+        border-radius: $border-radius-8;
+    }
+}
+.ant-input-affix-wrapper{
+    border: 1px solid rgba(160, 172, 187, 0.4) !important;
+    border-radius: 2px !important;
+    // margin-top: 4px;
+    background-color: var(--white-dark-bg) !important;
+    color: var(--title-color);
+    &::placeholder{
+        color: #A0ACBB;
+    } &:hover{
+        border-color: #ff815e !important;
+    }
+  }
+  .ant-input{
+    background-color: var(--white-dark-bg) !important;
+    &::placeholder{
+        color: #A0ACBB;
+    }
+  }
+@media (max-width: 600px) {
+    .search-input{
+        width: 100% !important;
+        &:hover{
+            width: 100% !important;
+        }
+    }
+    .wrapper-lower-head {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+}

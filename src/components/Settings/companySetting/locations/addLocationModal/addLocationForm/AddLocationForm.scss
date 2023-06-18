@@ -1,0 +1,67 @@
+.addLocationForm {
+    // margin: 20px 0;
+    // .ant-select-single{
+    //     width: 100%;  
+    //     margin-top: 4px;
+    // }
+    // .ant-select-selector{
+    //     border-radius: 1px;
+    //     height: 37px !important;
+    // }
+    // .ant-input {
+    //     height: 37px;
+    //     border-radius: 2px;
+    //     margin-top: 4px;
+
+    // }
+    // .m-t{
+    //     margin-top: 20px;
+    // };
+    .ant-input-lg {
+        border-radius: 0;
+
+    }
+    .ant-input{
+        font-size: 14px !important;
+    }
+    .ant-form-item {
+        margin-bottom: 10px;
+      
+    }
+
+
+
+    .ant-form-large .ant-form-item .ant-form-item-label>label {
+        height: 25px;
+    }
+
+    .formlable {
+        label {
+            height: 25px !important;
+            // padding-bottom: 0 0 0px;
+        }
+
+
+    }
+
+    .modalBtn {
+        button {
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+
+        margin-top: 20px;
+        text-align: end;
+    }
+    .ant-modal .ant-modal-content {
+        border-radius: 0;
+    }
+}
+
+
+.ant-form-vertical .ant-form-item-label,
+.ant-col-24.ant-form-item-label,
+.ant-col-xl-24.ant-form-item-label {
+    padding: 0;
+}

@@ -1,0 +1,444 @@
+@import "../../../sass//variables";
+
+@mixin hideScrollbar {
+  overflow: scroll !important;
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@mixin custom-scrollbar {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d5d4d4;
+    border-radius: 4px;
+  }
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// time card styling
+.time_card {
+  .value-text {
+    text-align: center;
+    margin: 14px auto 0.5rem;
+  }
+
+  .progress-text {
+    margin: 0;
+    // color: #0f172a;
+    letter-spacing: 0.2px;
+  }
+
+  .ant-progress {
+    height: 10px !important;
+  }
+
+  .ant-progress-text {
+    font-size: 12px;
+    color: var(--title-color);
+  }
+
+  .bottom-line {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 9px 9px;
+  }
+}
+
+
+//list card styling
+.list_card {
+  padding-bottom: 1rem;
+
+  .list-item {
+    position: relative;
+    padding-top: 1.25rem;
+    padding-left: 23px;
+    //  color: #14142b;
+    border-left: solid transparent 4px;
+
+    &:hover {
+      border-left: solid $secondary-color 4px;
+      background: rgba(231, 111, 81, 0.14);
+    }
+  }
+}
+
+// task card styling
+.tasks_card {
+  margin-bottom: -0.9rem;
+
+  .task-list-item {
+    min-height: 54px;
+    height: 54px;
+    @include flex-between;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    border-left: solid $secondary-color 4px;
+    position: relative;
+
+    .task_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .count_wrapper {
+      position: relative;
+      width: 20.51px;
+      height: 20.51px;
+      border-radius: 50%;
+
+      .count {
+        @include absolute-center;
+      }
+    }
+
+    &:hover {
+      .count_wrapper {
+        width: 45px;
+        height: 45px;
+        z-index: 3;
+        border: 3px solid $white-color;
+
+        .count {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      .custom_tooltip {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+// team absence styling
+.Team_absence_card {
+  margin-top: 1rem;
+  max-height: 380px;
+  @include custom-scrollbar;
+
+  .team-absence-list-item {
+    min-height: 80px;
+    height: 80px;
+    @include flex-between;
+    margin-bottom: 20px;
+    background-color: #f8f7f7;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+    border-radius: 16px;
+    position: relative;
+
+    .task_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .image_wrapper {
+        width: 54px;
+        height: 54px;
+        position: relative;
+        border-radius: 50%;
+
+        .inner_wrapper {
+          width: 92%;
+          height: 92%;
+          border-radius: 50%;
+          @include absolute-center;
+          background-color: white;
+        }
+
+        .image {
+          margin: 0;
+          @include absolute-center;
+        }
+      }
+
+      .text-color {
+        // color: #14142b;
+      }
+    }
+
+    .count_wrapper {
+      position: relative;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+
+      .count {
+        margin: 0;
+        @include absolute-center;
+      }
+    }
+
+    &:hover {
+      .count_wrapper {
+        width: 34px;
+        height: 34px;
+        z-index: 3;
+        border: solid $white-color;
+      }
+
+      .custom_tooltip {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+//work ballance card
+.Work_balance_card {
+  .sub_card {
+    min-width: 180px;
+    box-shadow: 0px 3.41333px 6.82667px -1.70667px rgba(16, 24, 40, 0.1);
+    border-radius: 7.68px;
+
+    .ant-card-body {
+      padding: 18px 10px !important;
+    }
+
+    .sub_card-container {
+      min-height: 105px;
+      // display: flex;
+      flex-direction: column;
+
+      .sub_card_title {
+        // color: #2b2947;
+      }
+
+      .days_count {
+        // color: #57566a;
+      }
+    }
+  }
+}
+
+//user card styling
+.users_card_wrapper {
+  border-radius: 9px !important;
+  background-color: $white-color !important;
+  padding: 0 1px;
+
+  .user-card {
+    // background-color: $white-color !important;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+    box-shadow: 0px 4px 8px rgba(16, 24, 40, 0.1);
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+
+    .title {
+      // color: #14142b;
+    }
+
+    .progress_wrapper {
+      width: 96px;
+      height: 96px;
+      position: relative;
+      margin: 2rem auto 0.5rem !important;
+
+      .user_image {
+        height: 78;
+        width: 78;
+        position: absolute;
+      }
+
+      &:hover {
+        .user_image {
+          opacity: 0;
+        }
+      }
+    }
+
+    .user-name {
+      margin-top: 7px;
+      // color: $black-color;
+    }
+
+    .designation {
+      text-transform: capitalize;
+      margin-top: 0;
+    }
+
+    .progess-title {
+      color: #4e6073;
+      margin-left: 8px;
+    }
+  }
+}
+
+// web and app usage styling
+.usage_card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .domain_name {
+    min-width: 100px;
+    // color: #14142b;
+  }
+
+  .time_tracked {
+    // color: #14142b;
+    opacity: 0.5;
+  }
+}
+
+// members card styling
+.members_card {
+  @mixin row-wrapper {
+    @include flex-between;
+    margin-bottom: 20px;
+    background-color: #f8f7f7;
+    padding: 10px 30px 10px 20px;
+    border-radius: 16px;
+    // box-shadow: -8px 8px 12px rgba(218, 222, 232, 0.4);
+    position: relative;
+  }
+
+  .list_item_wrapper {
+    max-height: 380px;
+    @include custom-scrollbar;
+
+    .members-list-item {
+      min-height: 113px;
+      height: 113px;
+      @include row-wrapper;
+
+      .task_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .image_wrapper {
+          width: 54px;
+          height: 54px;
+          position: relative;
+          border-radius: 50%;
+
+          .inner_wrapper {
+            width: 92%;
+            height: 92%;
+            border-radius: 50%;
+            @include absolute-center;
+            background-color: white;
+          }
+
+          .image {
+            margin: 0;
+            @include absolute-center;
+          }
+        }
+      }
+
+      .text-color {
+        // color: #14142b;
+      }
+
+      .progress_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  }
+
+  .header {
+    background-color: transparent !important;
+    @include row-wrapper;
+    box-shadow: none !important;
+    padding: 10px 30px 4px;
+    min-height: 50px;
+    margin-bottom: 14px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Work_balance_card {
+    .sub_card {
+      min-width: 160px;
+    }
+  }
+
+  .members_card {
+    @include hideScrollbar;
+
+    .header {
+      min-width: 500px;
+    }
+
+    .list_item_wrapper {
+      min-width: 500px;
+    }
+  }
+
+  .Team_absence_card {
+    overflow: auto;
+    @include hideScrollbar;
+
+    .team-absence-list-item {
+      min-width: 500px;
+    }
+  }
+
+  .usage_card {
+    padding-bottom: 0 !important;
+    @include hideScrollbar;
+
+    .usage_card_row {
+      min-width: 500px;
+    }
+  }
+
+  .list_card {
+    .list-item {
+      padding-top: 1rem;
+      padding-left: 12px !important;
+    }
+  }
+
+  .tasks_card {
+    .task-list-item {
+      padding-left: 12px;
+
+      .task_wrapper {
+        gap: 8px;
+      }
+    }
+  }
+}

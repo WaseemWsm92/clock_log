@@ -1,0 +1,84 @@
+.organization-wrapper {
+  width: 100%;
+  max-width: 750px;
+
+  .organizationInformation {
+    margin: 20px 0;
+
+    // .ant-input:placeholder-shown, .ant-select-single:not(.ant-select-customize-input) .ant-select-selector ,.ant-input{
+    //     height: 37px;
+    //     margin-top: 4px;
+
+    // }
+
+    .ant-select-single {
+      width: 100%;
+      margin-top: 4px;
+    }
+    .ant-select-selection-placeholder {
+      display: flex;
+      align-items: center;
+    }
+    .ant-select-selector {
+      border: 1px solid rgba(160, 172, 187, 0.4) !important;
+      font-size: 14px !important;
+      border-radius: 2px !important;
+      margin-top: 4px;
+      background-color: var(--white-dark-bg);
+      color: var(--title-color);
+      color: var(--label-color) !important;
+      &::placeholder {
+        color: #a0acbb !important;
+      }
+      &:hover {
+        border-color: #ff815e !important;
+      }
+    }
+    .ant-select-selection-placeholder {
+      color: #a0acbb !important;
+    }
+    .ant-select-arrow {
+      color: #a0acbb !important;
+    }
+    .select-label-color {
+      color: var(--label-color) !important;
+    }
+    .ant-input {
+      font-size: 14px;
+      border: 1px solid rgba(160, 172, 187, 0.4) !important;
+      border-radius: 2px !important;
+      margin-top: 4px;
+      background-color: var(--white-dark-bg) !important;
+      color: var(--title-color);
+      &::placeholder {
+        color: #a0acbb;
+      }
+      &:hover {
+        border-color: #ff815e !important;
+      }
+    }
+    .SaveBtn {
+      background-color: #e76f51;
+      height: 40px;
+      margin-top: 40px;
+    }
+    input[type="file"] {
+      color: #a0acbb;
+    }
+    input[type="file"]::file-selector-button {
+      // background-color: #f4f9ff;
+      background: var(--common-btn-hover-bg) !important;
+      // color: #3b4d60;
+      color: var(--label-color);
+      border: none;
+      font-family: "Poppins";
+      padding: 4px;
+      border-radius: 4px;
+    }
+    input[type="file"]::file-selector-button:hover {
+      // background-color: #e1eefd;
+      background: var(--common-btn-hover-bg) !important;
+        color: var(--label-color);
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.edit-users-main {
+  .setting-user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkboxes {
+    margin-top: 20px;
+
+    .check {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .ant-switch {
+      background-color: #bfbfbf;
+    }
+
+    .ant-switch.ant-switch-checked {
+      background: #fe5c36;
+    }
+  }
+
+  .project-heading {
+    p {
+      padding-top: 13px;
+      padding-bottom: 17px;
+    }
+  }
+
+  .user-label-color {
+    font-size: 12px !important;
+  }
+
+  .working-grid {
+    h3 {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .update-user-setting {
+    &:hover {
+      color: white;
+      border: none !important;
+      background-color: #264653 !important;
+    }
+  }
+
+  .my-popover-users {
+    .ant-popover-content {
+      .ant-popover-inner {
+        margin-top: -15px !important;
+        border-radius: 4px !important;
+        margin-left: 161px;
+      }
+
+      .ant-popover-arrow {
+        display: none !important;
+      }
+
+      .ant-popover-inner-content {
+        padding: 10px !important;
+      }
+    }
+
+    @media only screen and (max-width: 1542px) and (min-width: 270px) {
+      .ant-popover-content {
+        .ant-popover-inner {
+          margin-left: 20px !important;
+        }
+      }
+    }
+
+    @media screen and (max-width: 508px) {
+      .ant-popover-content {
+        .ant-popover-inner {
+          margin-left: 45px !important;
+        }
+      }
+    }
+  }
+
+  .select-input-theme {
+    &:not(.ant-select-customize-input) .ant-select-selector {
+      height: 39px !important;
+      padding: 0px !important;
+      padding: 0.5rem 0.75rem !important;
+      border: 1px solid #e6e6e6 !important;
+      &:hover {
+        border: 1px solid #fe5c36 !important;
+      }
+
+      .ant-select-selection-item {
+        padding-inline-end: 0px !important;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+  .ant-radio-wrapper .ant-radio-inner {
+    border-color: #e76f51 !important;
+    background-color: #fff !important;
+    &::after {
+      background-color: #e76f51 !important;
+      height: 22px;
+      width: 22px;
+      top: 4px;
+      left: 4px;
+    }
+  }
+}

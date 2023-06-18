@@ -1,0 +1,43 @@
+.website-app-wrapper {
+  padding: 10px;
+
+  .close-icon {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+  }
+
+
+
+  .dropdown {
+    display: flex;
+    justify-content: end !important;
+  }
+
+  @media (max-width: 1500px) {
+    .dropdown {
+      display: flex !important;
+      justify-content: start !important;
+    }
+  }
+
+  .ant-select .ant-select-selector {
+    background-color: var(--white-dark-bg);
+    color: var(--title-color);
+  }
+
+  .filter_btn {
+    border: none;
+    color: "red";
+
+    .filterby {
+      text-decoration-line: underline;
+    }
+
+    &:hover {
+      background-color: #F4F9FF;
+      color: #3B4D60;
+    }
+  }
+
+}

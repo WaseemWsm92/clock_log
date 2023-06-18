@@ -1,0 +1,50 @@
+.customized-dashboard {
+  button {
+    background-color: var(--btn-theme-color);
+    border-radius: 6px;
+    border: none;
+    color: var(--grey-color);
+    width: 254px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      color: #3b4d60 !important;
+      background-color: #e5ecf3 !important;
+
+      img {
+        filter: brightness(0) invert(0) !important;
+      }
+    }
+  }
+}
+
+.select-user-wrap-dashboard {
+  display: flex !important;
+  flex-direction: column !important;
+
+  .ant-checkbox-wrapper {
+    margin-inline-start: 0 !important;
+    display: flex !important;
+    padding-block: 5px;
+  }
+
+  .ant-checkbox-group {
+    display: block;
+  }
+
+  .pagination-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.action_btns {
+  padding-block: 4px;
+
+  img {
+    margin-right: 7px;
+  }
+}

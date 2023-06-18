@@ -1,0 +1,81 @@
+@import '../../sass/variables.scss';
+
+.manage-calendar-wrapper {
+    .manageBtn {
+        border-radius: 6px;
+        border: none;
+        // width: 211px;
+        color: #3B4D60;
+        gap: 3px;
+
+        &:hover {
+            background-color: #C0E2F2;
+            color: #3B4D60 !important;
+        }
+    }
+}
+
+.manage-calendar-modal {
+    .ant-modal-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 730px;
+        background-color: var(--without-gradient-bg-2);
+
+        .ant-modal-header {
+            background: none;
+        }
+
+        .ant-modal-close-x {
+            color: var(--title-color);
+        }
+    }
+
+
+    .manage-calendar-content {
+        button {
+            background-color: $secondary-color;
+            border: none;
+            padding: 8px 17px;
+            margin-top: 20px;
+        }
+
+        p {
+            padding-top: 35px;
+        }
+    }
+
+    .connect-calendar-content {
+        h2 {
+            font-size: 38px;
+            line-height: 57px;
+            text-align: center;
+        }
+
+        p {
+            line-height: 21px;
+            max-width: 430px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+    }
+
+    .connect-calendar-btn {
+        .featured-calendar-icon {
+            gap: 16px;
+            // background-color: #F8FAFC;
+            background-color: var(--btn-theme-color);
+            padding: 17px 0;
+            margin-top: 24px;
+        }
+
+        h2 {
+            line-height: 28px;
+            text-align: center;
+            font-size: 16px !important;
+        }
+    }
+}

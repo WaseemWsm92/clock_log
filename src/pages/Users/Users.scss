@@ -1,0 +1,23 @@
+.users {
+  .top-btns {
+    float: right;
+    position: absolute;
+    right: 54px;
+    top: 15%;
+
+    .btn-primary {
+      border-radius: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      position: relative !important;
+      top: 0;
+      right: 0;
+      float: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}

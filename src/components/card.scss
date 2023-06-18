@@ -1,0 +1,235 @@
+@import "../sass/_variables.scss";
+
+.common-card {
+  box-sizing: border-box;
+  // border-radius: $border-radius-9;
+  background-size: 100% 200%;
+  transition: background 0.4s;
+  // box-shadow: $card-box-shadow;
+  transition: all 0.5s ease;
+  position: relative;
+
+  // If using ant progress in your card (hint: no need to add classes there)
+  .ant-progress {
+    .ant-progress-inner {
+      .ant-progress-text {
+        font-size: $fs-12;
+        line-height: $line-height-18;
+        font-weight: $fw-600;
+        padding: 10px;
+        color: var(--title-color);
+      }
+    }
+  }
+
+  &:hover {
+
+    // because on after, text white wasn't working 
+    &::after {
+      display: none;
+    }
+
+
+    background-position: 100% 100% !important;
+    color: $white-color !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+
+    .darkBlue-color,
+    .light-grey,
+    .dark-pink-color,
+    .light-pink-color,
+    .title-color,
+    .darkBluee-color,
+    .error-color,
+    .lightGreenProgress-color,
+    .lightYellow-color,
+    .darkOrange-color,
+    .blue-color,
+    .darkGreen-color {
+      transition: all 0.5s ease;
+      color: $white-color !important;
+    }
+
+    // if you've image and wants to white it on hover than assign this class to that image tag
+    .hover-white-image {
+      filter: brightness(0) invert(1);
+    }
+
+    // If using ant progress in your card (hint: no need to add classes there)
+    .ant-progress {
+      .ant-progress-text {
+        color: $white-color !important;
+      }
+
+      .ant-progress-circle-path {
+        stroke: $white-color !important;
+      }
+
+      .ant-progress-text {
+        .ant-progress-text {
+          font-size: $fs-14;
+          line-height: $line-height-18;
+          font-weight: $fw-600;
+          padding: 10px;
+        }
+      }
+
+      &:hover {
+        background-position: 100% 100% !important;
+        color: $white-color !important;
+      }
+    }
+
+    &::after {
+      transition: all 0.5s ease;
+      height: 0.5rem;
+      border-top-left-radius: unset;
+      border-top-right-radius: 0px;
+    }
+
+    // Transitions
+    .transition-from-left {
+      animation: slideInFromLeft 1s ease-in;
+      color: $white-color !important;
+    }
+
+    .transition-from-right {
+      animation: slideInFromRight 1s ease-in;
+      color: $white-color !important;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        opacity: 0.2;
+        transform: translateX(-180%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInFromRight {
+      0% {
+        opacity: 0.2;
+        transform: translateX(150%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  // common properties
+  &::after {
+    content: "";
+    height: 0.375rem;
+    width: 100%;
+    border-radius: $border-radius-10;
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  // Pass common color class and add effect on the basis of that also change the background variable accordingly
+  &.lightGreenProgress-color::after {
+    background: $light-green-progress-color;
+  }
+
+  &.error-color::after {
+    background: $error-color;
+  }
+
+  &.lightYellow-color::after {
+    background: $light-yellow-color;
+  }
+
+  &.blue-color::after {
+    background: $blue-color;
+  }
+
+  &.darkGreen-color::after {
+    background: $darkGreen-color;
+  }
+
+  &.darkOrange-color::after {
+    background: $darkOrange-color;
+  }
+  &.darkPurple-color::after {
+    background: $purple-color;
+  }
+  &.secondary-color::after {
+    background: $secondary-color;
+  }
+  &.progress-color::after {
+    background: $progress-color;
+  }
+  &.darkRed-color::after {
+    background: $darkRed-color;
+  }
+  &.darkRed-color::after {
+    background: $darkRed-color;
+  }
+  &.Orange-color::after {
+    background: $Orange-color;
+  }
+
+  &.successLight-color::after {
+    background: $successLight-color;
+  }
+  &.warning-color::after {
+    background: $warning-color;
+  }
+  &.secondary-color::after {
+    background: $secondary-color;
+  }
+  &.title-color-after::after {
+    background: $title-color;
+  }
+  &.progress-color::after {
+    background: $progress-color;
+  }
+  &.lightOrange-color::after {
+    background: $lightOrange-color;
+  }
+  &.lightDarkBlue-color::after {
+    background: $lightDarkBlue-color;
+  }
+  &.orange-color::after {
+    background: $orange-color;
+  }
+
+  &.successLight-color::after {
+    background: $successLight-color;
+  }
+
+  &.warning-color::after {
+    background: $warning-color;
+  }
+
+  &.secondary-color::after {
+    background: $secondary-color;
+  }
+
+  &.title-color-after::after {
+    background: $title-color;
+  }
+
+  &.progress-color::after {
+    background: $progress-color;
+  }
+
+  &.lightOrange-color::after {
+    background: $lightOrange-color;
+  }
+
+  &.lightDarkBlue-color::after {
+    background: $lightDarkBlue-color;
+  }
+
+  &.orange-color::after {
+    background: $orange-color;
+  }
+}

@@ -1,0 +1,71 @@
+.tabs {
+.myCard {
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 192px;
+  padding-bottom: 3px;
+  transition: transform 250ms;
+
+  img {
+    position: absolute;
+    margin-top: -185px;
+  }
+
+  .link {
+    visibility: hidden;
+    color: #e76f51;
+    margin-top: -5px;
+  }
+
+  &:hover {
+    background: var(--gradient-card-hover);
+    .link {
+      visibility: visible;
+    }
+  }
+}
+
+.search-field {
+  display: flex;
+  justify-content: end;
+  margin: 16px 0;
+
+  .input {
+    .ant-input{
+      background-color: var(--white-dark-bg) !important;
+      color: var(--label-color);
+      &::placeholder{
+        color: var(--label-color);
+      }
+    }
+    padding: 5px 10px;
+    width: 260px;
+    margin-left: 5px;
+    border: 1px solid rgba(160, 172, 187, 0.4) !important;
+    border-radius: 2px !important;
+    margin-top: 4px;
+    background-color: var(--white-dark-bg) !important;
+    color: var(--label-color);
+    transition: width 0.9s ease, background-color 0.9s ease;
+    @media only screen and (max-width: 483px) {
+      width: 100%;
+    }
+  }
+  .input:hover {
+    width: 275px;
+    // background-color: #fff;
+    @media only screen and (max-width: 483px) {
+      width: 100%;
+    }
+  }
+  .input:hover + .what {
+    width: 15%;
+  }
+}
+  .ant-tabs-nav-list {
+    padding: 0.85rem 0 !important;
+  }
+}

@@ -1,0 +1,51 @@
+.ShowActiveTimeline{
+    flex-flow: unset;
+    justify-content: center;
+    .activeTime{
+        width: 100%;
+        cursor: pointer;
+        background-color: #2A9D8F;
+        margin-right: 0;
+        &:hover{
+            box-shadow: 1px 2px 2px rgb(0 0 0 / 54%);
+        }
+        
+    }
+    .addManualTime{
+        background-color: #F4A261;
+        margin-right: 0;
+        cursor: pointer;
+    }
+    .AddTimeBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2px;
+        // background-color: #E5EAF1;
+        background-color: var(--timeline-bg-color);
+        cursor: pointer;
+       
+        span{
+            display: none;
+            background: #A0ACBB;
+            border-radius: 50%;
+            color: white;
+            padding: 5px;
+            height: 20px;
+            width: 20px;
+        }
+          &:hover span{
+            display: flex
+        }
+    }
+    .allUserTimelines{
+        height: 30px;
+    }
+    .individual {
+        height: 40px;
+        &:hover{
+            background: white;
+        border: 1px dotted #A0ACBB;  
+        }
+    }
+}

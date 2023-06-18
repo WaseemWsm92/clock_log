@@ -1,0 +1,42 @@
+.forgot-password {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: end;
+  cursor: pointer;
+  margin-bottom: 15px;
+  color: rgba(231, 111, 81, 1);
+  &:hover {
+    color: rgba(231, 111, 81, 1);
+  }
+}
+.sign-in-form {
+  .ant-form-item .ant-form-item-explain-error {
+    margin-bottom: 15px;
+  }
+  .ant-input-affix-wrapper > input.ant-input {
+    padding: 0 12px;
+  }
+  .ant-input-affix-wrapper,
+  .ant-input {
+    padding: 14px 20px;
+    background: #fafafa !important;
+  }
+  .ant-input-suffix {
+    font-size: 22px;
+  }
+  .remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+  }
+  .reset-success {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #52c41a;
+  }
+}
